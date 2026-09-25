@@ -1,0 +1,7 @@
+langchain
+pypdf
+dotenv
+langgraph
+pytesseract
+pdf2image
+poppler-utils

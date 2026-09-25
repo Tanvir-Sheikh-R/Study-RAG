@@ -1,0 +1,15 @@
+[project]
+name = "study-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.2",
+    "langgraph>=1.2.12",
+    "pdf2image>=1.17.0",
+    "poppler-utils>=0.1.0",
+    "pypdf>=6.19.0",
+    "pytesseract>=0.3.13",
+]

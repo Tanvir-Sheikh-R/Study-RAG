@@ -7,3 +7,11 @@ pdf2image
 poppler-utils
 
 tqdm
+langchain_text_splitters
+langchain_huggingface
+
+langchain_chroma
+sentence-transformers
+langchain_openai
+langchain_groq
+langchain_deepseek

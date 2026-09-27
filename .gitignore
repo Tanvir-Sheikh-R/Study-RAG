@@ -1,1 +1,8 @@
 pdf/
+.env
+venv/
+.venv/
+
+model_cache/
+extracted_text/
+bangla_book_db/

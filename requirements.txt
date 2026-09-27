@@ -5,3 +5,5 @@ langgraph
 pytesseract
 pdf2image
 poppler-utils
+
+tqdm

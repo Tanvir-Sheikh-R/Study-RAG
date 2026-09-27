@@ -12,4 +12,5 @@ dependencies = [
     "poppler-utils>=0.1.0",
     "pypdf>=6.19.0",
     "pytesseract>=0.3.13",
+    "tqdm>=4.70.1",
 ]

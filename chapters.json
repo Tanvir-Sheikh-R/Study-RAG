@@ -1,0 +1,215 @@
+{
+    "all_books": {
+        "class_5": {
+            "bangla": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "বৈচিত্র্যময় বাংলাদেশ",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "তিতুমীর",
+                    "starting_page": 6
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "দূরের পাল্লা",
+                    "starting_page": 19
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "পত্র লিখি",
+                    "starting_page": 24
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "ঠিক আছে",
+                    "starting_page": 28
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "সুখ আর দুখু",
+                    "starting_page": 32
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "সাইক্লোন",
+                    "starting_page": 38
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "রয়েল বেঙ্গল টাইগার",
+                    "starting_page": 42
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "টুকটুক ও চিকু",
+                    "starting_page": 47
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "রাখাল ছেলে",
+                    "starting_page": 53
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "কুটির শিল্প",
+                    "starting_page": 57
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "শিখোর সাধনা",
+                    "starting_page": 63
+                },
+                {
+                    "chapter_number": 13,
+                    "chapter_name": "পাখির মতো",
+                    "starting_page": 69
+                },
+                {
+                    "chapter_number": 14,
+                    "chapter_name": "কুপোকাত",
+                    "starting_page": 74
+                },
+                {
+                    "chapter_number": 15,
+                    "chapter_name": "সংকল্প",
+                    "starting_page": 84
+                },
+                {
+                    "chapter_number": 16,
+                    "chapter_name": "স্মরণীয় যাঁরা বরণীয় যাঁরা",
+                    "starting_page": 90
+                },
+                {
+                    "chapter_number": 17,
+                    "chapter_name": "মাটির নিচে পুরানো নগর",
+                    "starting_page": 98
+                },
+                {
+                    "chapter_number": 18,
+                    "chapter_name": "ইচ্ছামতী",
+                    "starting_page": 102
+                },
+                {
+                    "chapter_number": 19,
+                    "chapter_name": "ভাষার খেলা",
+                    "starting_page": 107
+                },
+                {
+                    "chapter_number": 20,
+                    "chapter_name": "শিক্ষাগুরুর মর্যাদা",
+                    "starting_page": 112
+                },
+                {
+                    "chapter_number": 21,
+                    "chapter_name": "বিদায় হজের ভাষণ",
+                    "starting_page": 119
+                },
+                {
+                    "chapter_number": 22,
+                    "chapter_name": "আমরা তোমাদের ভুলব না",
+                    "starting_page": 124
+                },
+                {
+                    "chapter_number": 23,
+                    "chapter_name": "পোস্টার লিখি, প্ল্যাকার্ড লিখি",
+                    "starting_page": 130
+                }
+            ],
+            "bgs": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "জলবায়ু পরিবর্তন",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "আমরা মানুষ",
+                    "starting_page": 9
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "বাংলাদেশের ক্ষুদ্র নৃগোষ্ঠী",
+                    "starting_page": 19
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "আমাদের স্মরণীয় নেতা",
+                    "starting_page": 32
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "আমাদের মুক্তিযুদ্ধ",
+                    "starting_page": 41
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বাংলাদেশের ঐতিহাসিক স্থান ও নিদর্শন",
+                    "starting_page": 61
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "দক্ষিণ এশিয়ার সাংস্কৃতিক বৈচিত্র্য",
+                    "starting_page": 77
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "আঞ্চলিক ও আন্তর্জাতিক সংস্থা",
+                    "starting_page": 87
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "রাষ্ট্র এবং সমাজে আমার অধিকার ও কর্তব্য",
+                    "starting_page": 94
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "নৈতিক ও সামাজিক আচরণ",
+                    "starting_page": 110
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "বাংলাদেশের যোগাযোগ মানচিত্র",
+                    "starting_page": 115
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "বাংলাদেশের বনভূমি ও প্রাকৃতিক পর্যটন স্থান",
+                    "starting_page": 126
+                },
+                {
+                    "chapter_number": 13,
+                    "chapter_name": "বাংলাদেশের প্রাকৃতিক সম্পদ",
+                    "starting_page": 133
+                },
+                {
+                    "chapter_number": 14,
+                    "chapter_name": "বাংলাদেশের জনসংখ্যা ও জনসম্পদ",
+                    "starting_page": 141
+                },
+                {
+                    "chapter_number": 15,
+                    "chapter_name": "ব্যক্তিগত বাজেট ও ব্যাংক",
+                    "starting_page": 148
+                },
+                {
+                    "chapter_number": 16,
+                    "chapter_name": "জরুরি পরিস্থিতি",
+                    "starting_page": 154
+                },
+                {
+                    "chapter_number": 17,
+                    "chapter_name": "শব্দভাণ্ডার",
+                    "starting_page": 160
+                },
+                {
+                    "chapter_number": 17,
+                    "chapter_name": "শব্দভাণ্ডার",
+                    "starting_page": 160
+                }
+            ]
+        }
+    }
+}

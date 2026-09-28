@@ -43,7 +43,9 @@ def pdf_to_text_file(pdf_path):
 
 
         text_splitter.create_documents(texts = [text], metadatas= {"page": f"PAGE_{i-4}", "chapter_number": chapter_no})
-# svgd.....................
+# svgd..............
+
+
 
 
 

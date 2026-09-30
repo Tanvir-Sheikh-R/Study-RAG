@@ -1198,7 +1198,7 @@
                     ]
                 }
             ],
-             "bgs": [
+            "bgs": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "সমাজ বিবর্তনের ইতিহাস",
@@ -1297,7 +1297,7 @@
                     "starting_page": 100
                 }
             ],
-             "charupath": [
+            "charupath": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "গদ্য",
@@ -1306,46 +1306,55 @@
                         {
                             "sub_chapter_number": 1.1,
                             "sub_chapter_name": "সততার পুরস্কার",
+                            "writer_name": "মুহম্মদ শহীদুল্লাহ",
                             "starting_page": 1
                         },
                         {
                             "sub_chapter_number": 1.2,
                             "sub_chapter_name": "মিনু",
+                            "writer_name": "বনফুল",
                             "starting_page": 7
                         },
                         {
                             "sub_chapter_number": 1.3,
                             "sub_chapter_name": "নীল নদ আর পিরামিডের দেশ",
+                            "writer_name": "সৈয়দ মুজতবা আলী",
                             "starting_page": 14
                         },
                         {
                             "sub_chapter_number": 1.4,
                             "sub_chapter_name": "তোলপাড়",
+                            "writer_name": "শওকত ওসমান",
                             "starting_page": 23
                         },
                         {
                             "sub_chapter_number": 1.5,
                             "sub_chapter_name": "আকাশ",
+                            "writer_name": "আবদুল্লাহ আল-মুতী",
                             "starting_page": 31
                         },
                         {
                             "sub_chapter_number": 1.6,
                             "sub_chapter_name": "মাদার তেরেসা",
+                            "writer_name": "সনজীদা খাতুন",
                             "starting_page": 36
                         },
                         {
                             "sub_chapter_number": 1.7,
                             "sub_chapter_name": "আমাদের লোকশিল্প",
+                            "writer_name": "কামরুল হাসান",
                             "starting_page": 42
                         },
                         {
                             "sub_chapter_number": 1.8,
                             "sub_chapter_name": "কত কাল ধরে",
+                            "writer_name": "আনিসুজ্জামান",
                             "starting_page": 50
                         },
                         {
                             "sub_chapter_number": 1.9,
                             "sub_chapter_name": "কার্টুন, ব্যঙ্গচিত্র ও পোস্টারের ভাষা",
+                            "writer_name": "সংকলিত",
                             "starting_page": 55
                         }
                     ]
@@ -1358,46 +1367,55 @@
                         {
                             "sub_chapter_number": 2.1,
                             "sub_chapter_name": "জন্মভূমি",
+                            "writer_name": "রবীন্দ্রনাথ ঠাকুর",
                             "starting_page": 63
                         },
                         {
                             "sub_chapter_number": 2.2,
                             "sub_chapter_name": "সুখ",
+                            "writer_name": "কামিনী রায়",
                             "starting_page": 67
                         },
                         {
                             "sub_chapter_number": 2.3,
                             "sub_chapter_name": "মানুষ জাতি",
+                            "writer_name": "সত্যেন্দ্রনাথ দত্ত",
                             "starting_page": 71
                         },
                         {
                             "sub_chapter_number": 2.4,
                             "sub_chapter_name": "ঝিঙে ফুল",
+                            "writer_name": "কাজী নজরুল ইসলাম",
                             "starting_page": 76
                         },
                         {
                             "sub_chapter_number": 2.5,
                             "sub_chapter_name": "আসমানি",
+                            "writer_name": "জসীমউদ্দীন",
                             "starting_page": 80
                         },
                         {
                             "sub_chapter_number": 2.6,
                             "sub_chapter_name": "চিঠি বিলি",
+                            "writer_name": "রোকনুজ্জামান খান",
                             "starting_page": 84
                         },
                         {
                             "sub_chapter_number": 2.7,
                             "sub_chapter_name": "বাঁচতে দাও",
+                            "writer_name": "শামসুর রাহমান",
                             "starting_page": 88
                         },
                         {
                             "sub_chapter_number": 2.8,
                             "sub_chapter_name": "পাখির কাছে ফুলের কাছে",
+                            "writer_name": "আল মাহমুদ",
                             "starting_page": 92
                         },
                         {
                             "sub_chapter_number": 2.9,
                             "sub_chapter_name": "ফাল্গুন মাস",
+                            "writer_name": "হুমায়ুন আজাদ",
                             "starting_page": 96
                         }
                     ]
@@ -1410,17 +1428,2634 @@
                         {
                             "sub_chapter_number": 3.1,
                             "sub_chapter_name": "কর্ম-অনুশীলন",
+                            "writer_name": null,
                             "starting_page": 101
                         },
                         {
                             "sub_chapter_number": 3.2,
                             "sub_chapter_name": "সৃজনশীল প্রশ্ন : কিছু কথা",
+                            "writer_name": null,
                             "starting_page": 102
                         }
                     ]
                 }
             ],
-            
+            "christian_religion": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "ঈশ্বরকে জানা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ঈশ্বরের সৃষ্টিকর্মের উদ্দেশ্য",
+                    "starting_page": 14
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "মানুষ সৃষ্টি",
+                    "starting_page": 21
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "স্বর্গদূত ও মানুষের পতন : পরিত্রাণের প্রতিশ্রুতি",
+                    "starting_page": 31
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "ঈশ্বরের আহ্বানে ইশাইয়ার সাড়াডান",
+                    "starting_page": 38
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "মুক্তিদাতা যীশুর জন্ম ও শৈশব",
+                    "starting_page": 46
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "প্রভু যীশুর আশ্চর্য কাজ",
+                    "starting_page": 57
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "খ্রিস্টমণ্ডলীর জন্ম ও প্রেরণকর্ম",
+                    "starting_page": 66
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "সত্যানবাদিতা, শৃঙ্খলা ও সেবা",
+                    "starting_page": 77
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "প্রিয়নাথ বৈরাগী",
+                    "starting_page": 89
+                }
+            ],
+            "english": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "Going to a New School",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "Congratulations! Well Done!",
+                    "starting_page": 4
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "At a Railway Station",
+                    "starting_page": 7
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "Where are You From?",
+                    "starting_page": 9
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "Thanks for Your Work",
+                    "starting_page": 13
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "It Smells Good!",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "Holding Hands",
+                    "starting_page": 19
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "Grocery Shopping",
+                    "starting_page": 21
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "Health is Wealth",
+                    "starting_page": 28
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "Remedies: Modern and Traditional",
+                    "starting_page": 33
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "Are You Listening?-1",
+                    "starting_page": 37
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "An Unseen Beauty of Bangladesh",
+                    "starting_page": 39
+                },
+                {
+                    "chapter_number": 13,
+                    "chapter_name": "Our Pride",
+                    "starting_page": 42
+                },
+                {
+                    "chapter_number": 14,
+                    "chapter_name": "The Lion's Mane",
+                    "starting_page": 46
+                },
+                {
+                    "chapter_number": 15,
+                    "chapter_name": "An Old People's Home",
+                    "starting_page": 49
+                },
+                {
+                    "chapter_number": 16,
+                    "chapter_name": "Boats Sail on the Rivers",
+                    "starting_page": 52
+                },
+                {
+                    "chapter_number": 17,
+                    "chapter_name": "Are You Listening?-2",
+                    "starting_page": 53
+                },
+                {
+                    "chapter_number": 18,
+                    "chapter_name": "Make Your Snacks",
+                    "starting_page": 56
+                },
+                {
+                    "chapter_number": 19,
+                    "chapter_name": "Stop, Look and Listen",
+                    "starting_page": 60
+                },
+                {
+                    "chapter_number": 20,
+                    "chapter_name": "Hason Raja: The Mystic Bard of Bangladesh",
+                    "starting_page": 61
+                },
+                {
+                    "chapter_number": 21,
+                    "chapter_name": "Wonders of the World-1",
+                    "starting_page": 63
+                },
+                {
+                    "chapter_number": 22,
+                    "chapter_name": "Wonders of the World-2",
+                    "starting_page": 65
+                },
+                {
+                    "chapter_number": 23,
+                    "chapter_name": "We Live in a Global Village",
+                    "starting_page": 68
+                },
+                {
+                    "chapter_number": 24,
+                    "chapter_name": "Our Wage Earners",
+                    "starting_page": 71
+                },
+                {
+                    "chapter_number": 25,
+                    "chapter_name": "The Concert for Bangladesh",
+                    "starting_page": 75
+                },
+                {
+                    "chapter_number": 26,
+                    "chapter_name": "Buying Clothes",
+                    "starting_page": 78
+                },
+                {
+                    "chapter_number": 27,
+                    "chapter_name": "Andre",
+                    "starting_page": 83
+                },
+                {
+                    "chapter_number": 28,
+                    "chapter_name": "Are You Listening?-3",
+                    "starting_page": 84
+                },
+                {
+                    "chapter_number": 29,
+                    "chapter_name": "Taking a Test",
+                    "starting_page": 86
+                },
+                {
+                    "chapter_number": 30,
+                    "chapter_name": "What Should We do?",
+                    "starting_page": 88
+                },
+                {
+                    "chapter_number": 31,
+                    "chapter_name": "Too Much or Too Little Water",
+                    "starting_page": 90
+                },
+                {
+                    "chapter_number": 32,
+                    "chapter_name": "An Invitation for Robin",
+                    "starting_page": 92
+                },
+                {
+                    "chapter_number": 33,
+                    "chapter_name": "The Garden",
+                    "starting_page": 94
+                },
+                {
+                    "chapter_number": 34,
+                    "chapter_name": "Sample Question",
+                    "starting_page": 101
+                }
+            ],
+            "english_grammar": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "A Grammar",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "Parts of Speech",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "The Tenses",
+                            "starting_page": 26
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "Articles: a, an, the",
+                            "starting_page": 40
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "Possessives",
+                            "starting_page": 46
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "The -ing form of Verb: Gerund and Participle",
+                            "starting_page": 50
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "Sentences",
+                            "starting_page": 57
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "Introductory 'There' and 'It'",
+                            "starting_page": 68
+                        },
+                        {
+                            "sub_chapter_number": 1.8,
+                            "sub_chapter_name": "Punctuation and Capitalisation",
+                            "starting_page": 72
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "B Composition",
+                    "starting_page": 83,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "Letters and E-mails",
+                            "starting_page": 83
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "Writing Paragraphs",
+                            "starting_page": 96
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "Appendix",
+                    "starting_page": 102,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 3.1,
+                            "sub_chapter_name": "Answer Key",
+                            "starting_page": 102
+                        },
+                        {
+                            "sub_chapter_number": 3.2,
+                            "sub_chapter_name": "Sample Question",
+                            "starting_page": 103
+                        },
+                        {
+                            "sub_chapter_number": 3.3,
+                            "sub_chapter_name": "Guidelines for Question Setters",
+                            "starting_page": 107
+                        }
+                    ]
+                }
+            ],
+            "hindu_religion": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "স্রষ্টা ও সৃষ্টি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ধর্মগ্রন্থ",
+                    "starting_page": 7
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "হিন্দুধর্মের স্বরূপ ও বিশ্বাস",
+                    "starting_page": 18
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "নিত্যকর্ম ও যোগাসন",
+                    "starting_page": 30
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "দেব-দেবী ও পূজা-পার্বণ",
+                    "starting_page": 39
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "ধর্মীয় উপাখ্যানে নৈতিক শিক্ষা",
+                    "starting_page": 48
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "অবতার ও আদর্শ জীবনচরিত",
+                    "starting_page": 57
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "हिंदूধর্ম ও নৈতিক মূল্যবোধ",
+                    "starting_page": 72
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "পরিশিষ্ট",
+                    "starting_page": 83
+                }
+            ],
+            "home_science": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "ক বিভাগ- গৃহ ও গৃহ ব্যবস্থাপনা (১-২২)",
+                    "starting_page": 2,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "গৃহ ও গৃহ পরিবেশের প্রাথমিক ধারণা",
+                            "starting_page": 2
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "গৃহের পরিষ্কার-পরিচ্ছন্নতা",
+                            "starting_page": 11
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "গৃহ ব্যবস্থাপনা",
+                            "starting_page": 16
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "খ বিভাগ- শিশু বিকাশ ও পারিবারিক সম্পর্ক (২৩-৫৯)",
+                    "starting_page": 24,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "পরিবার ও শিশু",
+                            "starting_page": 24
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "ছোটদের শিষ্টাচার শিক্ষা",
+                            "starting_page": 34
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "কৈশোরকালীন বিকাশ",
+                            "starting_page": 45
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "কৈশোরকালীন পরিবর্তন ও নিজের নিরাপত্তা রক্ষা",
+                            "starting_page": 55
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "গ বিভাগ- খাদ্য ও খাদ্য ব্যবস্থাপনা (৬০-৯৮)",
+                    "starting_page": 61,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 3.1,
+                            "sub_chapter_name": "খাদ্য, পুষ্টি ও স্বাস্থ্য",
+                            "starting_page": 61
+                        },
+                        {
+                            "sub_chapter_number": 3.2,
+                            "sub_chapter_name": "খাদ্যের পুষ্টিমূল্য",
+                            "starting_page": 71
+                        },
+                        {
+                            "sub_chapter_number": 3.3,
+                            "sub_chapter_name": "খাদ্য চাহিদা",
+                            "starting_page": 82
+                        },
+                        {
+                            "sub_chapter_number": 3.4,
+                            "sub_chapter_name": "খাদ্যাভ্যাস গঠন",
+                            "starting_page": 91
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ঘ বিভাগ- বস্ত্র ও পরিচ্ছদ (৯৯-১৩২)",
+                    "starting_page": 100,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 4.1,
+                            "sub_chapter_name": "বস্ত্র ও পরিচ্ছদের প্রাথমিক ধারণা",
+                            "starting_page": 100
+                        },
+                        {
+                            "sub_chapter_number": 4.2,
+                            "sub_chapter_name": "বয়ন তন্তুর ধারণা",
+                            "starting_page": 107
+                        },
+                        {
+                            "sub_chapter_number": 4.3,
+                            "sub_chapter_name": "পোশাকের যত্ন ও সংরক্ষণ",
+                            "starting_page": 116
+                        },
+                        {
+                            "sub_chapter_number": 4.4,
+                            "sub_chapter_name": "সেলাইয়ের সরঞ্জাম ও বিভিন্ন ধরনের ফোঁড়",
+                            "starting_page": 122
+                        }
+                    ]
+                }
+            ],
+            "ict": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "তথ্য ও যোগাযোগ প্রযুক্তি পরিচিতি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "তথ্য ও যোগাযোগ প্রযুক্তি সংশ্লিষ্ট যন্ত্রপাতি",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "তথ্য ও যোগাযোগ প্রযুক্তির নিরাপদ ব্যবহার",
+                    "starting_page": 37
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ওয়ার্ড প্রসেসিং",
+                    "starting_page": 47
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "ইন্টারনেট পরিচিতি",
+                    "starting_page": 57
+                }
+            ],
+            "islam_religion": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রথম অধ্যায় : আকাইদ",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "তাওহিদ",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "কালিমা তায়্যিবা",
+                            "starting_page": 3
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "কালিমা শাহাদাত",
+                            "starting_page": 5
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "ঈমানে মুজমাল",
+                            "starting_page": 6
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "আল-আসমাউল হুসনা",
+                            "starting_page": 7
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "রিসালাত",
+                            "starting_page": 9
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "আখিরাত",
+                            "starting_page": 10
+                        },
+                        {
+                            "sub_chapter_number": 1.8,
+                            "sub_chapter_name": "আকাইদ ও নৈতিকতা",
+                            "starting_page": 13
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "দ্বিতীয় অধ্যায় : ইবাদত",
+                    "starting_page": 19,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "ইবাদতের ধারণা ও তাৎপর্য",
+                            "starting_page": 19
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "নাজাসাত",
+                            "starting_page": 20
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "পবিত্রতা",
+                            "starting_page": 22
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "অজু",
+                            "starting_page": 23
+                        },
+                        {
+                            "sub_chapter_number": 2.5,
+                            "sub_chapter_name": "তায়াম্মুম",
+                            "starting_page": 25
+                        },
+                        {
+                            "sub_chapter_number": 2.6,
+                            "sub_chapter_name": "গোসল",
+                            "starting_page": 26
+                        },
+                        {
+                            "sub_chapter_number": 2.7,
+                            "sub_chapter_name": "সালাত",
+                            "starting_page": 27
+                        },
+                        {
+                            "sub_chapter_number": 2.8,
+                            "sub_chapter_name": "সালাতের সময়সূচি",
+                            "starting_page": 28
+                        },
+                        {
+                            "sub_chapter_number": 2.9,
+                            "sub_chapter_name": "সালাত আদায়ের নিয়ম",
+                            "starting_page": 29
+                        },
+                        {
+                            "sub_chapter_number": 2.10,
+                            "sub_chapter_name": "সালাতের ফরজ",
+                            "starting_page": 31
+                        },
+                        {
+                            "sub_chapter_number": 2.11,
+                            "sub_chapter_name": "সিজদাহু",
+                            "starting_page": 35
+                        },
+                        {
+                            "sub_chapter_number": 2.12,
+                            "sub_chapter_name": "সিজদায়ে তিলাওয়াত",
+                            "starting_page": 36
+                        },
+                        {
+                            "sub_chapter_number": 2.13,
+                            "sub_chapter_name": "সালাতের নৈতিক শিক্ষা",
+                            "starting_page": 37
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "তৃতীয় অধ্যায় : কুরআন ও হাদিস শিক্ষা",
+                    "starting_page": 44,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 3.1,
+                            "sub_chapter_name": "আল-কুরআনের পরিচয়",
+                            "starting_page": 44
+                        },
+                        {
+                            "sub_chapter_number": 3.2,
+                            "sub_chapter_name": "কুরআন তিলাওয়াত",
+                            "starting_page": 46
+                        },
+                        {
+                            "sub_chapter_number": 3.3,
+                            "sub_chapter_name": "তাজবিদ",
+                            "starting_page": 47
+                        },
+                        {
+                            "sub_chapter_number": 3.4,
+                            "sub_chapter_name": "মাখরাজ",
+                            "starting_page": 48
+                        },
+                        {
+                            "sub_chapter_number": 3.5,
+                            "sub_chapter_name": "অর্থ ও পটভূমিসহ আল-কুরআনের কতিপয় সূরা",
+                            "starting_page": 56
+                        },
+                        {
+                            "sub_chapter_number": 3.6,
+                            "sub_chapter_name": "সূরা আল-ফাতিহা",
+                            "starting_page": 56
+                        },
+                        {
+                            "sub_chapter_number": 3.7,
+                            "sub_chapter_name": "সূরা আন-নাস",
+                            "starting_page": 58
+                        },
+                        {
+                            "sub_chapter_number": 3.8,
+                            "sub_chapter_name": "সূরা আল-ফালাক্ব",
+                            "starting_page": 61
+                        },
+                        {
+                            "sub_chapter_number": 3.9,
+                            "sub_chapter_name": "সূরা আল-হুমাযাহ",
+                            "starting_page": 63
+                        },
+                        {
+                            "sub_chapter_number": 3.10,
+                            "sub_chapter_name": "সূরা আল-আসর",
+                            "starting_page": 65
+                        },
+                        {
+                            "sub_chapter_number": 3.11,
+                            "sub_chapter_name": "অর্থসহ মুনাজাত বিষয়ক তিনটি আয়াত",
+                            "starting_page": 66
+                        },
+                        {
+                            "sub_chapter_number": 3.12,
+                            "sub_chapter_name": "আল-হাদিস",
+                            "starting_page": 69
+                        },
+                        {
+                            "sub_chapter_number": 3.13,
+                            "sub_chapter_name": "অর্থসহ নৈতিক গুণাবলি বিষয়ক দুটি হাদিস",
+                            "starting_page": 71
+                        },
+                        {
+                            "sub_chapter_number": 3.14,
+                            "sub_chapter_name": "অর্থসহ মুনাজাতমূলক দুটি হাদিস",
+                            "starting_page": 72
+                        },
+                        {
+                            "sub_chapter_number": 3.15,
+                            "sub_chapter_name": "নৈতিক ও মানবিক মূল্যবোধ প্রতিষ্ঠায় হাদিস",
+                            "starting_page": 73
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "চতুর্থ অধ্যায় : আখলাক",
+                    "starting_page": 79,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 4.1,
+                            "sub_chapter_name": "আখলাকে হামিদাহ",
+                            "starting_page": 79
+                        },
+                        {
+                            "sub_chapter_number": 4.2,
+                            "sub_chapter_name": "সত্যবাদিতা",
+                            "starting_page": 80
+                        },
+                        {
+                            "sub_chapter_number": 4.3,
+                            "sub_chapter_name": "পিতামাতার প্রতি কর্তব্য",
+                            "starting_page": 81
+                        },
+                        {
+                            "sub_chapter_number": 4.4,
+                            "sub_chapter_name": "আত্মীয়স্বজনের প্রতি কর্তব্য",
+                            "starting_page": 83
+                        },
+                        {
+                            "sub_chapter_number": 4.5,
+                            "sub_chapter_name": "প্রতিবেশীর প্রতি কর্তব্য",
+                            "starting_page": 84
+                        },
+                        {
+                            "sub_chapter_number": 4.6,
+                            "sub_chapter_name": "বড়দের প্রতি শ্রদ্ধা ও ছোটদের প্রতি স্নেহ",
+                            "starting_page": 86
+                        },
+                        {
+                            "sub_chapter_number": 4.7,
+                            "sub_chapter_name": "সহপাঠীদের সাথে সদ্ব্যবহার",
+                            "starting_page": 87
+                        },
+                        {
+                            "sub_chapter_number": 4.8,
+                            "sub_chapter_name": "আখলাকে যামিমাহ",
+                            "starting_page": 88
+                        },
+                        {
+                            "sub_chapter_number": 4.9,
+                            "sub_chapter_name": "মিথ্যাচার",
+                            "starting_page": 89
+                        },
+                        {
+                            "sub_chapter_number": 4.10,
+                            "sub_chapter_name": "গিবত বা পরনিন্দা",
+                            "starting_page": 90
+                        },
+                        {
+                            "sub_chapter_number": 4.11,
+                            "sub_chapter_name": "গালি দেওয়া",
+                            "starting_page": 91
+                        },
+                        {
+                            "sub_chapter_number": 4.12,
+                            "sub_chapter_name": "ধূমপান ও মাদকাসক্তি",
+                            "starting_page": 92
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "পঞ্চম অধ্যায় : আদর্শ জীবনচরিত",
+                    "starting_page": 94,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 5.1,
+                            "sub_chapter_name": "মহানবি হজরত মুহাম্মদ (স.)-এর জীবনআদর্শ",
+                            "starting_page": 94
+                        },
+                        {
+                            "sub_chapter_number": 5.2,
+                            "sub_chapter_name": "হজরত আবু বকর (রা.)-এর জীবনআদর্শ",
+                            "starting_page": 101
+                        },
+                        {
+                            "sub_chapter_number": 5.3,
+                            "sub_chapter_name": "হজরত উমর ফারুক (রা.)-এর জীবনআদর্শ",
+                            "starting_page": 102
+                        },
+                        {
+                            "sub_chapter_number": 5.4,
+                            "sub_chapter_name": "হজরত খাদিজা (রা.)-এর জীবনআদর্শ",
+                            "starting_page": 105
+                        },
+                        {
+                            "sub_chapter_number": 5.5,
+                            "sub_chapter_name": "হজরত ইমাম আবু হানিফা (র.)-এর জীবনআদর্শ",
+                            "starting_page": 107
+                        },
+                        {
+                            "sub_chapter_number": 5.6,
+                            "sub_chapter_name": "হজরত আবদুল কাদির জিলানি (র.)-এর জীবনআদর্শ",
+                            "starting_page": 108
+                        }
+                    ]
+                }
+            ],
+            "kormo_o_jibon": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "কর্মেই আনন্দ",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "আমাদের প্রয়োজনীয় কাজ",
+                    "starting_page": 26
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "শিক্ষায় সাফল্য",
+                    "starting_page": 41
+                }
+            ],
+            "krishi": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "আমাদের জীবনে কৃষি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "কৃষি প্রযুক্তি ও যন্ত্রপাতি",
+                    "starting_page": 9
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "কৃষি উপকরণ",
+                    "starting_page": 28
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "কৃষি ও জলবায়ু",
+                    "starting_page": 46
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "কৃষিজ উৎপাদন",
+                    "starting_page": 58
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বনায়ন",
+                    "starting_page": 89
+                }
+            ],
+            "math": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "স্বাভাবিক সংখ্যা ও ভগ্নাংশ",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "অনুপাত ও শতকরা",
+                    "starting_page": 38
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "পূর্ণসংখ্যা",
+                    "starting_page": 59
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "বীজগণিতীয় রাশি",
+                    "starting_page": 76
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "সরল সমীকরণ",
+                    "starting_page": 95
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "জ্যামিতির মৌলিক ধারণা",
+                    "starting_page": 106
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "ব্যবহারিক জ্যামিতি",
+                    "starting_page": 124
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "তথ্য ও উপাত্ত",
+                    "starting_page": 137
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "উত্তরমালা",
+                    "starting_page": 150
+                }
+            ],
+            "pali": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "পালি শব্দমালা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "গদ্য (রতনসুত্তং)",
+                    "starting_page": 5
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "জাতকমালা",
+                    "starting_page": 11
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ধম্মপদট্‌ঠ কথা",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "পদ্য",
+                    "starting_page": 22
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "লোকনীতি",
+                    "starting_page": 26
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "চরিয়া পিটক",
+                    "starting_page": 30
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "থের-থেরীগাথা",
+                    "starting_page": 34
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "ব্যাকরণ",
+                    "starting_page": 41
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "বচন",
+                    "starting_page": 47
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "পদ প্রকরণ",
+                    "starting_page": 50
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "অনুবাদ",
+                    "starting_page": 54
+                }
+            ],
+            "science": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "বৈজ্ঞানিক প্রক্রিয়া ও পরিমাপ",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "জীবজগৎ",
+                    "starting_page": 11
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "উদ্ভিদ ও প্রাণীর কোষীয় সংগঠন",
+                    "starting_page": 21
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "উদ্ভিদের বাহ্যিক বৈশিষ্ট্য",
+                    "starting_page": 28
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "সালোকসংশ্লেষণ",
+                    "starting_page": 38
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "সংবেদী অঙ্গ",
+                    "starting_page": 42
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "পদার্থের বৈশিষ্ট্য এবং বাহ্যিক প্রভাব",
+                    "starting_page": 50
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "মিশ্রণ",
+                    "starting_page": 60
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "আলোর ঘটনা",
+                    "starting_page": 73
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "গতি",
+                    "starting_page": 82
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "বল এবং সরল যন্ত্র",
+                    "starting_page": 93
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "পৃথিবীর উৎপত্তি ও গঠন",
+                    "starting_page": 103
+                },
+                {
+                    "chapter_number": 13,
+                    "chapter_name": "খাদ্য ও পুষ্টি",
+                    "starting_page": 113
+                },
+                {
+                    "chapter_number": 14,
+                    "chapter_name": "পরিবেশের ভারসাম্য এবং আমাদের জীবন",
+                    "starting_page": 124
+                }
+            ],
+            "sharirik_sikha": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "শরীরচর্চা ও সুস্থ জীবন",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "স্কাউটিং ও গার্ল গাইডিং",
+                    "starting_page": 16
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "স্বাস্থ্যবিজ্ঞান পরিচিতি ও স্বাস্থ্যসেবা",
+                    "starting_page": 30
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "আমাদের জীবনে বয়ঃসন্ধিকাল",
+                    "starting_page": 42
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "জীবনের জন্য খেলাধুলা",
+                    "starting_page": 50
+                }
+            ],
+            "songit": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "তত্ত্বীয়",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "প্রথম অধ্যায়: সংগীতের নীতি (পরিভাষা / তাল ও ছন্দ প্রকরণ)",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "দ্বিতীয় অধ্যায়: ইতিহাস (সংগীতের সংক্ষিপ্ত ইতিহাস / সংগীতগুণীদের জীবনী / বাদ্যযন্ত্র পরিচিতি)",
+                            "starting_page": 8
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ব্যবহারিক",
+                    "starting_page": 20,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "তৃতীয় অধ্যায়: শাস্ত্রীয়সংগীত",
+                            "starting_page": 20
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "চতুর্থ অধ্যায়: বাংলাগান",
+                            "starting_page": 36
+                        }
+                    ]
+                }
+            ],
+            "songskrito": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রথম ভাগ",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "প্রথমঃ পাঠঃ বর্ণপরিচয়ঃ",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "দ্বিতীয়ঃ পাঠঃ বিশেষ্যপদপ্রয়োগঃ",
+                            "starting_page": 9
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "তৃতীয়ঃ পাঠঃ বিশেষ্যপদপ্রয়োগঃ",
+                            "starting_page": 11
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "চতুর্থঃ পাঠঃ সর্বনামপদপ্রয়োগঃ",
+                            "starting_page": 13
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "পঞ্চমঃ পাঠঃ অব্যয়পদপ্রয়োগঃ",
+                            "starting_page": 15
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "ষষ্ঠঃ পাঠঃ কারকবিভক্তিপ্রয়োগঃ",
+                            "starting_page": 17
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "সপ্তমঃ পাঠঃ ঈশ্বরঃ",
+                            "starting_page": 19
+                        },
+                        {
+                            "sub_chapter_number": 1.8,
+                            "sub_chapter_name": "অষ্টমঃ পাঠঃ মাতাপিতরৌ",
+                            "starting_page": 20
+                        },
+                        {
+                            "sub_chapter_number": 1.9,
+                            "sub_chapter_name": "নবমঃ পাঠঃ গুরুভক্তিঃ",
+                            "starting_page": 22
+                        },
+                        {
+                            "sub_chapter_number": 1.10,
+                            "sub_chapter_name": "দশমঃ পাঠঃ বাংলাদেশস্য শরৎকালঃ",
+                            "starting_page": 23
+                        },
+                        {
+                            "sub_chapter_number": 1.11,
+                            "sub_chapter_name": "একাদশঃ পাঠঃ বাংলাদেশঃ",
+                            "starting_page": 25
+                        },
+                        {
+                            "sub_chapter_number": 1.12,
+                            "sub_chapter_name": "দ্বাদশঃ পাঠঃ নীলবর্ণশৃগালকথা",
+                            "starting_page": 27
+                        },
+                        {
+                            "sub_chapter_number": 1.13,
+                            "sub_chapter_name": "ত্রয়োদশঃ পাঠঃ মুনি-মূষিক-কথা",
+                            "starting_page": 29
+                        },
+                        {
+                            "sub_chapter_number": 1.14,
+                            "sub_chapter_name": "চতুর্দশঃ পাঠঃ কাক-বর্তক-কথা",
+                            "starting_page": 31
+                        },
+                        {
+                            "sub_chapter_number": 1.15,
+                            "sub_chapter_name": "পঞ্চদশঃ পাঠঃ নীতিশ্লোকাঃ",
+                            "starting_page": 33
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "দ্বিতীয় ভাগ",
+                    "starting_page": 35,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "প্রথম পাঠ: শব্দরূপ",
+                            "starting_page": 35
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "দ্বিতীয় পাঠ: ধাতুরূপ",
+                            "starting_page": 40
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "তৃতীয় পাঠ: পদপ্রকরণ",
+                            "starting_page": 44
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "চতুর্থ পাঠ: লিঙ্গপ্রকরণ",
+                            "starting_page": 47
+                        },
+                        {
+                            "sub_chapter_number": 2.5,
+                            "sub_chapter_name": "পঞ্চম পাঠ: কারক",
+                            "starting_page": 49
+                        },
+                        {
+                            "sub_chapter_number": 2.6,
+                            "sub_chapter_name": "অভিধানিকা",
+                            "starting_page": 51
+                        }
+                    ]
+                }
+            ]
+        },
+        "class_7": {
+            "anandapatha": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "তোতা-কাহিনী",
+                    "writer_name": "রবীন্দ্রনাথ ঠাকুর",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "জিদ",
+                    "writer_name": "জসীমউদ্দীন",
+                    "starting_page": 6
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "খুদে গোয়েন্দার অভিযান",
+                    "writer_name": "শহীদ সাবের",
+                    "starting_page": 11
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "দীক্ষা",
+                    "writer_name": "মোহাম্মদ নাসির আলী",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "পদ্য লেখার জোরে",
+                    "writer_name": "মাহমুদুল হক",
+                    "starting_page": 25
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "কোকিল",
+                    "writer_name": "হান্স ক্রিশ্চিয়ান অ্যান্ডারসেন (অনুবাদ: বুদ্ধদেব বসু)",
+                    "starting_page": 32
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "কিং লিয়ার",
+                    "writer_name": "উইলিয়াম শেক্‌সপিয়র (রূপান্তর: জাহানারা ইমাম)",
+                    "starting_page": 40
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "যুদ্ধক্ষেত্রে পিতাপুত্র",
+                    "writer_name": "আবুল কাশিম ফেরদৌসি (রূপান্তর: মমতাজউদ্দীন আহমদ)",
+                    "starting_page": 48
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "নাটিকা: জাগো সুন্দর",
+                    "writer_name": "কাজী নজরুল ইসলাম",
+                    "starting_page": 58
+                }
+            ],
+            "arbi": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রথম অধ্যায়",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "পরিচ্ছেদ-এক : আল্লাহর বাণী",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "পরিচ্ছেদ-দুই : রাসুল (সাঃ)-এর হাদিস",
+                            "starting_page": 5
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "পরিচ্ছেদ-তিন : আরবিতে সপ্তাহের সাত দিনের নাম",
+                            "starting_page": 10
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "পরিচ্ছেদ-চার : আরবিতে দিকের নাম",
+                            "starting_page": 16
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "পরিচ্ছেদ-পাঁচ : আরবি মাসের নাম",
+                            "starting_page": 21
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "পরিচ্ছেদ-ছয় : আরবিতে ঋতুর নাম",
+                            "starting_page": 26
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "পরিচ্ছেদ-সাত : আরবিতে গণনা",
+                            "starting_page": 33
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "দ্বিতীয় অধ্যায়",
+                    "starting_page": 43,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "পরিচ্ছেদ-এক : فِي الصَّفِّ",
+                            "starting_page": 43
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "পরিচ্ছেদ-দুই : وَطَنِي",
+                            "starting_page": 48
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "পরিচ্ছেদ-তিন : آدَابُ الطَّعَامِ",
+                            "starting_page": 54
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "পরিচ্ছেদ-চার : زِيَارَةُ بَيْتِ خَالٍ",
+                            "starting_page": 60
+                        },
+                        {
+                            "sub_chapter_number": 2.5,
+                            "sub_chapter_name": "পরিচ্ছেদ-পাঁচ : فِي السُّوقِ",
+                            "starting_page": 67
+                        }
+                    ]
+                }
+            ],
+            "arts_crafts": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "বাংলাদেশের চারুকলা শিক্ষার ইতিহাস",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "চিত্রকলা সর্বকালে সব মানুষের ভাষা",
+                    "starting_page": 8
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "বাংলাদেশের লোকশিল্প ও কারুশিল্প",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ছবি আঁকার বিভিন্ন মাধ্যম",
+                    "starting_page": 27
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "ছবি আঁকার নানারকম আনন্দদায়ক অনুশীলন",
+                    "starting_page": 31
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বিভিন্ন প্রকার শিল্পকর্ম",
+                    "starting_page": 40
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "রং ও রঙের ব্যবহার",
+                    "starting_page": 61
+                }
+            ],
+            "bangla": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "গদ্য",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "কাবুলিওয়ালা",
+                            "writer_name": "রবীন্দ্রনাথ ঠাকুর",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "লখার একুশে",
+                            "writer_name": "আবু বকর সিদ্দিক",
+                            "starting_page": 9
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "মরু-ভাস্কর",
+                            "writer_name": "হবীবুল্লাহ বাহার",
+                            "starting_page": 14
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "শব্দ থেকে কবিতা",
+                            "writer_name": "হুমায়ুন আজাদ",
+                            "starting_page": 19
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "পাখি",
+                            "writer_name": "লীলা মজুমদার",
+                            "starting_page": 24
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "পিতৃপুরুষের গল্প",
+                            "writer_name": "হারুন হাবীব",
+                            "starting_page": 32
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "ছবির রং",
+                            "writer_name": "হাশেম খান",
+                            "starting_page": 39
+                        },
+                        {
+                            "sub_chapter_number": 1.8,
+                            "sub_chapter_name": "সেই ছেলেটি",
+                            "writer_name": "মামুনুর রশীদ",
+                            "starting_page": 44
+                        },
+                        {
+                            "sub_chapter_number": 1.9,
+                            "sub_chapter_name": "বহু জাতিসত্তার দেশ- বাংলাদেশ",
+                            "writer_name": "এ. কে. শেরাম",
+                            "starting_page": 50
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "কবিতা",
+                    "starting_page": 57,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "নতুন দেশ",
+                            "writer_name": "রবীন্দ্রনাথ ঠাকুর",
+                            "starting_page": 57
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "কুলি-মজুর",
+                            "writer_name": "কাজী নজরুল ইসলাম",
+                            "starting_page": 62
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "আমার বাড়ি",
+                            "writer_name": "জসীমউদ্দীন",
+                            "starting_page": 66
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "শ্রাবণে",
+                            "writer_name": "সুকুমার রায়",
+                            "starting_page": 71
+                        },
+                        {
+                            "sub_chapter_number": 2.5,
+                            "sub_chapter_name": "গরবিনী মা-জননী",
+                            "writer_name": "সিকান্দার আবু জাফর",
+                            "starting_page": 75
+                        },
+                        {
+                            "sub_chapter_number": 2.6,
+                            "sub_chapter_name": "সাম্য",
+                            "writer_name": "সুফিয়া কামাল",
+                            "starting_page": 80
+                        },
+                        {
+                            "sub_chapter_number": 2.7,
+                            "sub_chapter_name": "মেলা",
+                            "writer_name": "আহসান হাবীব",
+                            "starting_page": 83
+                        },
+                        {
+                            "sub_chapter_number": 2.8,
+                            "sub_chapter_name": "এই অক্ষরে",
+                            "writer_name": "মহাদেব সাহা",
+                            "starting_page": 87
+                        },
+                        {
+                            "sub_chapter_number": 2.9,
+                            "sub_chapter_name": "সিঁড়ি",
+                            "writer_name": "হাসান রোবায়েত",
+                            "starting_page": 92
+                        }
+                    ]
+                }
+            ],
+            "bangla_bekoron": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "ভাষা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ব্যাকরণ",
+                    "starting_page": 10
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "ধ্বনি ও বর্ণ",
+                    "starting_page": 12
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "সন্ধি",
+                    "starting_page": 18
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "শব্দ ও পদ",
+                    "starting_page": 27,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "5.1",
+                            "sub_chapter_name": "কারক ও বিভক্তি",
+                            "starting_page": 27
+                        },
+                        {
+                            "sub_chapter_number": "5.2",
+                            "sub_chapter_name": "সম্বন্ধ ও সম্বোধন পদ",
+                            "starting_page": 34
+                        },
+                        {
+                            "sub_chapter_number": "5.3",
+                            "sub_chapter_name": "শব্দরূপ",
+                            "starting_page": 39
+                        },
+                        {
+                            "sub_chapter_number": "5.4",
+                            "sub_chapter_name": "বিশেষণের 'তর' ও 'তম'",
+                            "starting_page": 41
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "শব্দগঠন",
+                    "starting_page": 43,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "6.1",
+                            "sub_chapter_name": "উপসর্গযোগে শব্দগঠন",
+                            "starting_page": 45
+                        },
+                        {
+                            "sub_chapter_number": "6.2",
+                            "sub_chapter_name": "প্রত্যয়যোগে শব্দগঠন",
+                            "starting_page": 52
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "বাক্য",
+                    "starting_page": 58
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "বিরামচিহ্ন",
+                    "starting_page": 63
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "বানান",
+                    "starting_page": 68
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "শব্দার্থ",
+                    "starting_page": 74,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "10.1",
+                            "sub_chapter_name": "একই শব্দ বিভিন্ন অর্থে প্রয়োগ",
+                            "starting_page": 74
+                        },
+                        {
+                            "sub_chapter_number": "10.2",
+                            "sub_chapter_name": "বিপরীতার্থক শব্দ দিয়ে বাক্য রচনা",
+                            "starting_page": 79
+                        },
+                        {
+                            "sub_chapter_number": "10.3",
+                            "sub_chapter_name": "সমোচ্চারিত ভিন্নার্থক শব্দ দিয়ে বাক্য রচনা",
+                            "starting_page": 82
+                        },
+                        {
+                            "sub_chapter_number": "10.4",
+                            "sub_chapter_name": "এক কথায় প্রকাশ",
+                            "starting_page": 85
+                        },
+                        {
+                            "sub_chapter_number": "10.5",
+                            "sub_chapter_name": "বাগধারা",
+                            "starting_page": 88
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "নির্মিতি",
+                    "starting_page": 92,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "11.1",
+                            "sub_chapter_name": "রচনা (আমাদের জাতীয় পতাকা, আমাদের গ্রাম, দর্শনীয় স্থান, বাংলাদেশের নদনদী, জাতীয় কবি কাজী নজরুল ইসলাম, আমার ভালো-লাগা বই, আমার চারপাশের প্রকৃতি, আমার দেখা একটি মেলা, একটি দিনের দিনলিপি, শহীদ মিনার, টেলিভিশন, শৃঙ্খলাবোধ, সুন্দরবন)",
+                            "starting_page": 92
+                        },
+                        {
+                            "sub_chapter_number": "11.2",
+                            "sub_chapter_name": "অনুবাদ",
+                            "starting_page": 111
+                        },
+                        {
+                            "sub_chapter_number": "11.3",
+                            "sub_chapter_name": "সারমর্ম/সারাংশ",
+                            "starting_page": 112
+                        },
+                        {
+                            "sub_chapter_number": "11.4",
+                            "sub_chapter_name": "ভাবসম্প্রসারণ",
+                            "starting_page": 115
+                        },
+                        {
+                            "sub_chapter_number": "11.5",
+                            "sub_chapter_name": "আবেদনপত্র ও চিঠি",
+                            "starting_page": 121
+                        }
+                    ]
+                }
+            ],
+            "bgs": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "বাংলাদেশের মুক্তিসংগ্রাম ও গণআন্দোলন",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "বাংলাদেশের সংস্কৃতি ও সাংস্কৃতিক বৈচিত্র্য",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "পরিবারে শিশুর বেড়ে ওঠা",
+                    "starting_page": 29
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "বাংলাদেশের অর্থনীতি",
+                    "starting_page": 35
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "বাংলাদেশ ও বাংলাদেশের নাগরিক",
+                    "starting_page": 45
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বাংলাদেশের জলবায়ু",
+                    "starting_page": 53
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "বাংলাদেশের জনসংখ্যা পরিচিতি",
+                    "starting_page": 64
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "বাংলাদেশের সামাজিক সমস্যা",
+                    "starting_page": 77
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "বাংলাদেশ প্রবীণ ব্যক্তি ও নারীর অধিকার",
+                    "starting_page": 84
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "এশিয়ার কয়েকটি দেশ",
+                    "starting_page": 94
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "বাংলাদেশ ও আন্তর্জাতিক সহযোগিতা",
+                    "starting_page": 102
+                }
+            ],
+            "buddha": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "গৌতম বুদ্ধের নৈতিক শিক্ষা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "বন্দনা",
+                    "starting_page": 11
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "শীল",
+                    "starting_page": 18
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "দান",
+                    "starting_page": 29
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "সূত্র ও নীতিগাথা",
+                    "starting_page": 37
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "আর্য অষ্টাঙ্গিক মার্গ",
+                    "starting_page": 50
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "ধর্মীয় আচার-অনুষ্ঠান ও উৎসব",
+                    "starting_page": 56
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "চরিতমালা",
+                    "starting_page": 71
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "জাতক",
+                    "starting_page": 79
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "বৌদ্ধ ঐতিহ্য ও দর্শনীয় স্থান",
+                    "starting_page": 92
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "বৌদ্ধধর্মে রাজন্যবর্গের অবদান: সম্রাট অশোক",
+                    "starting_page": 102
+                }
+            ],
+            "christian": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "ঈশ্বরের অদ্বিতীয় পুত্র যীশু খ্রীষ্ট",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ঈশ্বরের সৃষ্টি উত্তম",
+                    "starting_page": 9
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "দেহ, মন ও আত্মাসম্পন্ন মানুষ",
+                    "starting_page": 16
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "পাপ",
+                    "starting_page": 26
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "মুক্তিদাতা যীশুর জীবন ও কাজ",
+                    "starting_page": 35
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "ঈশ্বরের আহ্বানে মারীয়ার সাড়াদান",
+                    "starting_page": 43
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "যীশুর আশ্চর্য কাজ ও ঐশ্বররাজ্য",
+                    "starting_page": 52
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "খ্রীষ্টমণ্ডলী এক, পবিত্র ও প্রেরিতিক",
+                    "starting_page": 60
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "ক্ষমা, সহনশীলতা ও দেশপ্রেম",
+                    "starting_page": 68
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "ফাদার চার্লস যোসেফ ইয়াং",
+                    "starting_page": 79
+                }
+            ],
+            "english": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "Attention, Please",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "My Study Guide",
+                    "starting_page": 10
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "What are Friends for?",
+                    "starting_page": 16
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "People Who Make a Difference",
+                    "starting_page": 26
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "Great Women to Remember",
+                    "starting_page": 48
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "Leisure",
+                    "starting_page": 55
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "Games and Sports",
+                    "starting_page": 72
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "Likes and Dislikes",
+                    "starting_page": 86
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "Climate Change",
+                    "starting_page": 98
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "Sample Question",
+                    "starting_page": 108
+                }
+            ],
+            "english_grammar": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "A Grammar",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "Parts of Speech",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "Modals",
+                            "starting_page": 12
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "The Tense",
+                            "starting_page": 16
+                        },
+                        {
+                            "sub_chapter_number": 1.4,
+                            "sub_chapter_name": "Forms of Verbs",
+                            "starting_page": 30
+                        },
+                        {
+                            "sub_chapter_number": 1.5,
+                            "sub_chapter_name": "More about Adjectives",
+                            "starting_page": 49
+                        },
+                        {
+                            "sub_chapter_number": 1.6,
+                            "sub_chapter_name": "More about Adverbs",
+                            "starting_page": 58
+                        },
+                        {
+                            "sub_chapter_number": 1.7,
+                            "sub_chapter_name": "More about Prepositions",
+                            "starting_page": 65
+                        },
+                        {
+                            "sub_chapter_number": 1.8,
+                            "sub_chapter_name": "Linking Words",
+                            "starting_page": 79
+                        },
+                        {
+                            "sub_chapter_number": 1.9,
+                            "sub_chapter_name": "Introducing Articles",
+                            "starting_page": 83
+                        },
+                        {
+                            "sub_chapter_number": 1.10,
+                            "sub_chapter_name": "Possessives",
+                            "starting_page": 90
+                        },
+                        {
+                            "sub_chapter_number": 1.11,
+                            "sub_chapter_name": "The Sentence",
+                            "starting_page": 95
+                        },
+                        {
+                            "sub_chapter_number": 1.12,
+                            "sub_chapter_name": "Introductory 'There'",
+                            "starting_page": 113
+                        },
+                        {
+                            "sub_chapter_number": 1.13,
+                            "sub_chapter_name": "There isn't/ There aren't",
+                            "starting_page": 119
+                        },
+                        {
+                            "sub_chapter_number": 1.14,
+                            "sub_chapter_name": "Infinitives, Gerunds and Participles",
+                            "starting_page": 124
+                        },
+                        {
+                            "sub_chapter_number": 1.15,
+                            "sub_chapter_name": "Capitalization and Punctuation",
+                            "starting_page": 130
+                        },
+                        {
+                            "sub_chapter_number": 1.16,
+                            "sub_chapter_name": "Direct Speech and Indirect Speech",
+                            "starting_page": 136
+                        },
+                        {
+                            "sub_chapter_number": 1.17,
+                            "sub_chapter_name": "Voice",
+                            "starting_page": 148
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "B Composition",
+                    "starting_page": 166,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "Writing Paragraphs",
+                            "starting_page": 166
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "Letter Writing",
+                            "starting_page": 178
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "Sample Question & Guidelines",
+                    "starting_page": 191
+                }
+            ],
+            "hindu_religion": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "স্রষ্টা ও সৃষ্টি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ধর্মগ্রন্থ",
+                    "starting_page": 7
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "हिंदूধর্মের স্বরূপ ও বিশ্বাস",
+                    "starting_page": 18
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "নিত্যকর্ম ও যোগাসন",
+                    "starting_page": 30
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "দেব-দেবী ও পূজা-পার্বণ",
+                    "starting_page": 39
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "ধর্মীয় উপাখ্যানে নৈতিক শিক্ষা",
+                    "starting_page": 48
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "অবতার ও আদর্শ জীবনচরিত",
+                    "starting_page": 57
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "হিন্দুধর্ম ও নৈতিক মূল্যবোধ",
+                    "starting_page": 72
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "পরিশিষ্ট",
+                    "starting_page": 83
+                }
+            ],
+            "home_science": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "ক বিভাগ- গৃহ ব্যবস্থাপনা ও গৃহসম্পদ",
+                    "starting_page": 2,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 1.1,
+                            "sub_chapter_name": "গৃহ ব্যবস্থাপনার স্তর ও গৃহসম্পদ",
+                            "starting_page": 2
+                        },
+                        {
+                            "sub_chapter_number": 1.2,
+                            "sub_chapter_name": "গৃহসামগ্রী ক্রয়",
+                            "starting_page": 12
+                        },
+                        {
+                            "sub_chapter_number": 1.3,
+                            "sub_chapter_name": "গৃহকে মনোরম ও আকর্ষণীয় করার নীতি",
+                            "starting_page": 17
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "খ বিভাগ- শিশুর বিকাশ ও সামাজিক সম্পর্ক",
+                    "starting_page": 32,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 2.1,
+                            "sub_chapter_name": "পরিবার ও সমাজের সদস্য হিসেবে শিশু",
+                            "starting_page": 32
+                        },
+                        {
+                            "sub_chapter_number": 2.2,
+                            "sub_chapter_name": "শিশুর বিকাশে খেলাধুলা",
+                            "starting_page": 40
+                        },
+                        {
+                            "sub_chapter_number": 2.3,
+                            "sub_chapter_name": "জাতিসংঘ সনদ অনুযায়ী শিশুর অধিকার",
+                            "starting_page": 51
+                        },
+                        {
+                            "sub_chapter_number": 2.4,
+                            "sub_chapter_name": "প্রতিবন্ধী শিশু",
+                            "starting_page": 59
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "গ বিভাগ- খাদ্য, পুষ্টি ও স্বাস্থ্য",
+                    "starting_page": 69,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 3.1,
+                            "sub_chapter_name": "খাদ্য উপাদান, পরিপাক ও শোষণ",
+                            "starting_page": 69
+                        },
+                        {
+                            "sub_chapter_number": 3.2,
+                            "sub_chapter_name": "মৌলিক খাদ্যগোষ্ঠী",
+                            "starting_page": 84
+                        },
+                        {
+                            "sub_chapter_number": 3.3,
+                            "sub_chapter_name": "রোগীর পথ্য ও পথ্য পরিকল্পনা",
+                            "starting_page": 93
+                        },
+                        {
+                            "sub_chapter_number": 3.4,
+                            "sub_chapter_name": "খাদ্য সংরক্ষণ",
+                            "starting_page": 102
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ঘ বিভাগ- বস্ত্র পরিচ্ছদ ও বয়ন তন্তু",
+                    "starting_page": 112,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": 4.1,
+                            "sub_chapter_name": "বয়ন তন্তুর গুণাগুণ",
+                            "starting_page": 112
+                        },
+                        {
+                            "sub_chapter_number": 4.2,
+                            "sub_chapter_name": "পোশাকের পরিচ্ছন্নতা",
+                            "starting_page": 118
+                        },
+                        {
+                            "sub_chapter_number": 4.3,
+                            "sub_chapter_name": "বস্ত্র অলংকরণ",
+                            "starting_page": 131
+                        },
+                        {
+                            "sub_chapter_number": 4.4,
+                            "sub_chapter_name": "পোশাকের পারিপাট্য ও ব্যক্তিত্ব",
+                            "starting_page": 140
+                        }
+                    ]
+                }
+            ],
+            "ict": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রাতাহিক জীবনে তথ্য ও যোগাযোগ প্রযুক্তি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "কম্পিউটার-সংশ্লিষ্ট যন্ত্রপাতি",
+                    "starting_page": 17
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "নিরাপদ ও নৈতিক ব্যবহার",
+                    "starting_page": 37
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "ওয়ার্ড প্রসেসিং",
+                    "starting_page": 53
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "শিক্ষায় ইন্টারনেটের ব্যবহার",
+                    "starting_page": 61
+                }
+            ],
+            "islam_religion": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "আকাইদ",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ইবাদত",
+                    "starting_page": 25
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "কুরআন ও হাদিস শিক্ষা",
+                    "starting_page": 51
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "আখলাক",
+                    "starting_page": 83
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "আদর্শ জীবনচরিত",
+                    "starting_page": 104
+                }
+            ],
+            "kormo_o_jibon": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "কর্ম ও মানবিকতা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "পারিবারিক কাজ ও পেশা",
+                    "starting_page": 22
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "শিক্ষা পরিকল্পনা ও কর্মক্ষেত্রে সফলতা",
+                    "starting_page": 37
+                }
+            ],
+            "krishi": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "কৃষি এবং আমাদের সংস্কৃতি",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "কৃষি প্রযুক্তি",
+                    "starting_page": 16
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "কৃষি উপকরণ",
+                    "starting_page": 37
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "কৃষি ও জলবায়ু",
+                    "starting_page": 56
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "কৃষিজ উৎপাদন",
+                    "starting_page": 74
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বনায়ন",
+                    "starting_page": 105
+                }
+            ],
+            "math": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "মূলদ ও অমূলদ সংখ্যা",
+                    "starting_page": 1
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "সমানুপাত ও লাভ-ক্ষতি",
+                    "starting_page": 18
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "পরিমাপ",
+                    "starting_page": 38
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "বীজগণিতীয় রাশির গুণ ও ভাগ",
+                    "starting_page": 50
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "বীজগণিতীয় সূত্রাবলি ও প্রয়োগ",
+                    "starting_page": 69
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "বীজগণিতীয় ভগ্নাংশ",
+                    "starting_page": 89
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "সরল সমীকরণ",
+                    "starting_page": 102
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "সমান্তরাল সরলরেখা",
+                    "starting_page": 119
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "ত্রিভুজ",
+                    "starting_page": 127
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "সর্বসমতা ও সদৃশতা",
+                    "starting_page": 145
+                },
+                {
+                    "chapter_number": 11,
+                    "chapter_name": "তথ্য ও উপাত্ত",
+                    "starting_page": 162
+                },
+                {
+                    "chapter_number": 12,
+                    "chapter_name": "উত্তরমালা",
+                    "starting_page": 170
+                }
+            ],
+            "pali": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রথম অধ্যায়: মহাবগ্‌গ",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "1.1",
+                            "sub_chapter_name": "যসস্স পব্বজ্জা",
+                            "starting_page": 1
+                        },
+                        {
+                            "sub_chapter_number": "1.2",
+                            "sub_chapter_name": "ভদ্দবগ্‌গিয় সহায়কানং বত্থু",
+                            "starting_page": 5
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "দ্বিতীয় অধ্যায়: জাতকমালা",
+                    "starting_page": 10,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "2.1",
+                            "sub_chapter_name": "বট্টক জাতক",
+                            "starting_page": 10
+                        },
+                        {
+                            "sub_chapter_number": "2.2",
+                            "sub_chapter_name": "সম্মোদমান জাতক",
+                            "starting_page": 13
+                        },
+                        {
+                            "sub_chapter_number": "2.3",
+                            "sub_chapter_name": "নক্খত্ত জাতক",
+                            "starting_page": 17
+                        },
+                        {
+                            "sub_chapter_number": "2.4",
+                            "sub_chapter_name": "সঞ্জীব জাতক",
+                            "starting_page": 20
+                        },
+                        {
+                            "sub_chapter_number": "2.5",
+                            "sub_chapter_name": "সুনখ জাতক",
+                            "starting_page": 23
+                        },
+                        {
+                            "sub_chapter_number": "2.6",
+                            "sub_chapter_name": "উলুক জাতক",
+                            "starting_page": 26
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 3,
+                    "chapter_name": "তৃতীয় অধ্যায়: ধম্মপদট্‌ঠকথা",
+                    "starting_page": 29,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "3.1",
+                            "sub_chapter_name": "দেবদত্তস্স বত্থু (১)",
+                            "starting_page": 29
+                        },
+                        {
+                            "sub_chapter_number": "3.2",
+                            "sub_chapter_name": "সুমনাদেবীযা বত্থু",
+                            "starting_page": 34
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 4,
+                    "chapter_name": "চতুর্থ অধ্যায়: খুদ্দক পাঠ",
+                    "starting_page": 39,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "4.1",
+                            "sub_chapter_name": "করণীয় মেত্তং",
+                            "starting_page": 39
+                        },
+                        {
+                            "sub_chapter_number": "4.2",
+                            "sub_chapter_name": "লোকনীতি",
+                            "starting_page": 40
+                        },
+                        {
+                            "sub_chapter_number": "4.3",
+                            "sub_chapter_name": "সুজনকাণ্ড",
+                            "starting_page": 43
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 5,
+                    "chapter_name": "পঞ্চম অধ্যায়: ধম্মপদ",
+                    "starting_page": 50,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "5.1",
+                            "sub_chapter_name": "পুপ্ফ বগ্‌গ",
+                            "starting_page": 50
+                        },
+                        {
+                            "sub_chapter_number": "5.2",
+                            "sub_chapter_name": "বাল বগ্‌গ",
+                            "starting_page": 53
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 6,
+                    "chapter_name": "ষষ্ঠ অধ্যায়: চরিযা পিটক",
+                    "starting_page": 57,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "6.1",
+                            "sub_chapter_name": "সিবিরাজ চরিয়ং",
+                            "starting_page": 57
+                        },
+                        {
+                            "sub_chapter_number": "6.2",
+                            "sub_chapter_name": "ধম্ম দেবদূত চরিযং",
+                            "starting_page": 60
+                        },
+                        {
+                            "sub_chapter_number": "6.3",
+                            "sub_chapter_name": "থের গাথা",
+                            "starting_page": 63
+                        },
+                        {
+                            "sub_chapter_number": "6.4",
+                            "sub_chapter_name": "মালুঙ্ক্যপুত্তো থেরো",
+                            "starting_page": 65
+                        },
+                        {
+                            "sub_chapter_number": "6.5",
+                            "sub_chapter_name": "সোপাকো থেরো",
+                            "starting_page": 66
+                        },
+                        {
+                            "sub_chapter_number": "6.6",
+                            "sub_chapter_name": "থেরী গাথা",
+                            "starting_page": 68
+                        },
+                        {
+                            "sub_chapter_number": "6.7",
+                            "sub_chapter_name": "নন্দা থেরী",
+                            "starting_page": 68
+                        },
+                        {
+                            "sub_chapter_number": "6.8",
+                            "sub_chapter_name": "সুভা থেরী",
+                            "starting_page": 69
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 7,
+                    "chapter_name": "সপ্তম অধ্যায়: সন্ধি",
+                    "starting_page": 73,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "7.1",
+                            "sub_chapter_name": "লিঙ্গ",
+                            "starting_page": 80
+                        },
+                        {
+                            "sub_chapter_number": "7.2",
+                            "sub_chapter_name": "বিশেষণের তারতম্য",
+                            "starting_page": 81
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 8,
+                    "chapter_name": "অষ্টম অধ্যায়: শব্দরূপ ও ধাতুরূপ",
+                    "starting_page": 83,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "8.1",
+                            "sub_chapter_name": "শব্দরূপ",
+                            "starting_page": 83
+                        },
+                        {
+                            "sub_chapter_number": "8.2",
+                            "sub_chapter_name": "আখ্যাতিক বিভক্তি",
+                            "starting_page": 92
+                        },
+                        {
+                            "sub_chapter_number": "8.3",
+                            "sub_chapter_name": "ধাতুরূপ",
+                            "starting_page": 95
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 9,
+                    "chapter_name": "নবম অধ্যায়: অসমাপিকা ক্রিয়া",
+                    "starting_page": 102,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "9.1",
+                            "sub_chapter_name": "কারক",
+                            "starting_page": 103
+                        },
+                        {
+                            "sub_chapter_number": "9.2",
+                            "sub_chapter_name": "বিভক্তিভেদ",
+                            "starting_page": 104
+                        }
+                    ]
+                },
+                {
+                    "chapter_number": 10,
+                    "chapter_name": "দশম অধ্যায়: অনুবাদ",
+                    "starting_page": 107,
+                    "sub_chapters": [
+                        {
+                            "sub_chapter_number": "10.1",
+                            "sub_chapter_name": "বাংলা থেকে পালি বাক্যের অনুবাদ",
+                            "starting_page": 107
+                        },
+                        {
+                            "sub_chapter_number": "10.2",
+                            "sub_chapter_name": "পালি থেকে বাংলা অনুবাদ",
+                            "starting_page": 107
+                        }
+                    ]
+                }
+            ],
+            "science": [
+                { "chapter_number": 1, "chapter_name": "নিম্নশ্রেণির জীব", "starting_page": 1 },
+                { "chapter_number": 2, "chapter_name": "উদ্ভিদ ও প্রাণীর কোষীয় সংগঠন", "starting_page": 10 },
+                { "chapter_number": 3, "chapter_name": "উদ্ভিদের বাহ্যিক বৈশিষ্ট্য", "starting_page": 22 },
+                { "chapter_number": 4, "chapter_name": "শ্বসন", "starting_page": 32 },
+                { "chapter_number": 5, "chapter_name": "পরিপাকতন্ত্র এবং রক্ত সংবহনতন্ত্র", "starting_page": 41 },
+                { "chapter_number": 6, "chapter_name": "পদার্থের গঠন", "starting_page": 55 },
+                { "chapter_number": 7, "chapter_name": "শক্তির ব্যবহার", "starting_page": 66 },
+                { "chapter_number": 8, "chapter_name": "শব্দের কথা", "starting_page": 80 },
+                { "chapter_number": 9, "chapter_name": "তাপ ও তাপমাত্রা", "starting_page": 90 },
+                { "chapter_number": 10, "chapter_name": "বিদ্যুৎ ও চুম্বকের ঘটনা", "starting_page": 101 },
+                { "chapter_number": 11, "chapter_name": "পারিপার্শ্বিক পরিবর্তন ও বিভিন্ন ঘটনা", "starting_page": 112 },
+                { "chapter_number": 12, "chapter_name": "সৌরজগৎ ও আমাদের পৃথিবী", "starting_page": 123 },
+                { "chapter_number": 13, "chapter_name": "প্রাকৃতিক পরিবেশ এবং দূষণ", "starting_page": 135 },
+                { "chapter_number": 14, "chapter_name": "জলবায়ু পরিবর্তন", "starting_page": 146 }
+            ],
+            "sharirik_sikha": [
+                { "chapter_number": 1, "chapter_name": "শরীরচর্চা ও সুস্থজীবন", "starting_page": 1 },
+                { "chapter_number": 2, "chapter_name": "স্কাউটিং ও গার্ল গাইডিং", "starting_page": 12 },
+                { "chapter_number": 3, "chapter_name": "স্বাস্থ্যবিজ্ঞান পরিচিতি ও স্বাস্থ্যসেবা", "starting_page": 24 },
+                { "chapter_number": 4, "chapter_name": "বয়ঃসন্ধিকালে ব্যক্তিগত নিরাপত্তা", "starting_page": 31 },
+                { "chapter_number": 5, "chapter_name": "জীবনের জন্য খেলাধুলা", "starting_page": 34 }
+            ],
+            "songeet": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "তত্ত্বীয়",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        { "sub_chapter_number": "1.1", "sub_chapter_name": "প্রথম অধ্যায়: সংগীতের নীতি (প্রথম পরিচ্ছেদ: পরিভাষা)", "starting_page": 1 },
+                        { "sub_chapter_number": "1.2", "sub_chapter_name": "প্রথম অধ্যায়: সংগীতের নীতি (দ্বিতীয় পরিচ্ছেদ: তাল ও ছন্দ প্রকরণ)", "starting_page": 3 },
+                        { "sub_chapter_number": "1.3", "sub_chapter_name": "দ্বিতীয় অধ্যায়: ইতিহাস (প্রথম পরিচ্ছেদ: সংগীতের সংক্ষিপ্ত ইতিহাস)", "starting_page": 6 },
+                        { "sub_chapter_number": "1.4", "sub_chapter_name": "দ্বিতীয় অধ্যায়: ইতিহাস (দ্বিতীয় পরিচ্ছেদ: সংগীতগুণীদের জীবনী)", "starting_page": 10 },
+                        { "sub_chapter_number": "1.5", "sub_chapter_name": "দ্বিতীয় অধ্যায়: ইতিহাস (তৃতীয় পরিচ্ছেদ: বাদ্যযন্ত্র পরিচিতি)", "starting_page": 23 }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "ব্যবহারিক",
+                    "starting_page": 30,
+                    "sub_chapters": [
+                        { "sub_chapter_number": "2.1", "sub_chapter_name": "তৃতীয় অধ্যায়: শাস্ত্রীয়সংগীত", "starting_page": 30 },
+                        { "sub_chapter_number": "2.2", "sub_chapter_name": "চতুর্থ অধ্যায়: বাংলাগান", "starting_page": 46 }
+                    ]
+                }
+            ],
+            "songskrito": [
+                {
+                    "chapter_number": 1,
+                    "chapter_name": "প্রথমঃ অধ্যায়ঃ",
+                    "starting_page": 1,
+                    "sub_chapters": [
+                        { "sub_chapter_number": "1.1", "sub_chapter_name": "প্রথমঃ পাঠঃ কৃষক-রাজহংসী-কথা", "starting_page": 1 },
+                        { "sub_chapter_number": "1.2", "sub_chapter_name": "দ্বিতীয়ঃ পাঠঃ কাক-শৃগাল-কথা", "starting_page": 3 },
+                        { "sub_chapter_number": "1.3", "sub_chapter_name": "তৃতীয়ঃ পাঠঃ মিথ্যাবাদী মেষপালকঃ", "starting_page": 5 },
+                        { "sub_chapter_number": "1.4", "sub_chapter_name": "চতুর্থঃ পাঠঃ হংস-কাক-ব্যাধ-কথা", "starting_page": 7 },
+                        { "sub_chapter_number": "1.5", "sub_chapter_name": "পঞ্চমঃ পাঠঃ সিংহ-মূষিক-কথা", "starting_page": 9 },
+                        { "sub_chapter_number": "1.6", "sub_chapter_name": "ষষ্ঠঃ পাঠঃ ভক্তঃ প্রহ্লাদঃ", "starting_page": 11 },
+                        { "sub_chapter_number": "1.7", "sub_chapter_name": "সপ্তমঃ পাঠঃ শৃগাল-দ্রাক্ষাফ্ল-কথা", "starting_page": 14 },
+                        { "sub_chapter_number": "1.8", "sub_chapter_name": "অষ্টমঃ পাঠঃ দেবী সরস্বতী", "starting_page": 17 },
+                        { "sub_chapter_number": "1.9", "sub_chapter_name": "নবমঃ পাঠঃ ভগবান শ্রীকৃষ্ণঃ", "starting_page": 19 },
+                        { "sub_chapter_number": "1.10", "sub_chapter_name": "দশমঃ পাঠঃ ঈশ্বরস্তোত্রম্", "starting_page": 21 },
+                        { "sub_chapter_number": "1.11", "sub_chapter_name": "একাদশঃ পাঠঃ নীতিশ্লোকাঃ", "starting_page": 23 }
+                    ]
+                },
+                {
+                    "chapter_number": 2,
+                    "chapter_name": "দ্বিতীয়ঃ অধ্যায়ঃ",
+                    "starting_page": 26,
+                    "sub_chapters": [
+                        { "sub_chapter_number": "2.1", "sub_chapter_name": "প্রথমঃ পাঠঃ বর্ণপ্রকরণম্", "starting_page": 26 },
+                        { "sub_chapter_number": "2.2", "sub_chapter_name": "দ্বিতীয়ঃ পাঠঃ সন্ধিপ্রকরণম্", "starting_page": 30 },
+                        { "sub_chapter_number": "2.3", "sub_chapter_name": "তৃতীয়ঃ পাঠঃ লিঙ্গপ্রকরণম্", "starting_page": 37 },
+                        { "sub_chapter_number": "2.4", "sub_chapter_name": "চতুর্থঃ পাঠঃ শব্দরূপঃ", "starting_page": 40 },
+                        { "sub_chapter_number": "2.5", "sub_chapter_name": "পঞ্চমঃ পাঠঃ ধাতুরূপঃ", "starting_page": 48 },
+                        { "sub_chapter_number": "2.6", "sub_chapter_name": "ষষ্ঠঃ পাঠঃ অব্যয়প্রকরণম্", "starting_page": 55 },
+                        { "sub_chapter_number": "2.7", "sub_chapter_name": "সপ্তমঃ পাঠঃ কারক-বিভক্তিঃ", "starting_page": 57 },
+                        { "sub_chapter_number": "2.8", "sub_chapter_name": "অভিধানিকা", "starting_page": 62 }
+                    ]
+                }
+            ]
         }
     }
 }

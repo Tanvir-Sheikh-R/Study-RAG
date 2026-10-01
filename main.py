@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 from langchain_deepseek import ChatDeepSeek
+from pipeline.pdf_to_document import build_documents
 import os
 
 
@@ -65,6 +66,7 @@ if os.path.exists(persist_directory) and os.listdir(persist_directory):
     print("Loaded existing vectorstore.")
 else:
     # First run — build and persist
+    documents = build_documents()
     vectorstore = Chroma.from_documents(
         documents=documents,
         embedding=embeddings,

@@ -15,3 +15,4 @@ sentence-transformers
 langchain_openai
 langchain_groq
 langchain_deepseek
+rapidfuzz

@@ -6,15 +6,15 @@ from tqdm import tqdm
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
-class_no : int = None
-subject_name : str = None
+class_no : int = 5
+subject_name : str = "Bangla"
 chapter_no : int = None
 
-pdf_path = f"pdf\{class_no}\{subject_name}.pdf"
+pdf_path = os.path.join("pdf", f"Class_{class_no}", f"{subject_name}.pdf")
 
 poppler_path = r"C:\poppler\Library\bin"  # adjust to your install
 
-output_dir = f"extracted_text\{class_no}"
+output_dir = os.path.join("extracted_text", f"Class_{class_no}")
 os.makedirs(output_dir, exist_ok=True)
 
 
@@ -42,7 +42,6 @@ def pdf_to_text_file(pdf_path):
         text = pytesseract.image_to_string(img, lang='ben')
 
 
-        text_splitter.create_documents(texts = [text], metadatas= {"page": f"PAGE_{i-4}", "chapter_number": chapter_no})
 # svgd..............
 
 
@@ -54,19 +53,23 @@ def pdf_to_text_file(pdf_path):
         print(f"--- Page {i+1}/{len(pages)} done ---")
 
     # Save as one combined text file
-    with open(os.path.join(output_dir, f"{pdf_path[4:-4]}.txt"), "w", encoding="utf-8") as f:
+    output_path = os.path.join(output_dir, f"{os.path.splitext(os.path.basename(pdf_path))[0]}.txt")
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n\n".join(full_text))
 
-    print("Done. Saved to", os.path.join(output_dir, f"{pdf_path[4:-4]}.txt"))
+    print("Done. Saved to", output_path)
 
 
 
 def text_to_chunks(pdf_path):
-    with open(os.path.join(output_dir, pdf_path), "r", encoding="utf-8") as f:
+    with open(pdf_path, "r", encoding="utf-8") as f:
         text = f.read()
     chunks  = text_splitter.create_documents(texts = [text], metadatas= {})
     return chunks 
 
 
 
-documents = text_to_chunks("book_full.txt")
+pdf_to_text_file(pdf_path)
+text_file_path = os.path.join(output_dir, f"{subject_name}.txt")
+documents = text_to_chunks(text_file_path)
+print(f"Total chunks created: {len(documents)}")

@@ -16,3 +16,6 @@ langchain_openai
 langchain_groq
 langchain_deepseek
 rapidfuzz
+easyocr
+torchvision
+torch

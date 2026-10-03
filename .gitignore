@@ -2,6 +2,8 @@ pdf/
 .env
 venv/
 .venv/
+myenv/
+.myenv/
 
 model_cache/
 extracted_text/

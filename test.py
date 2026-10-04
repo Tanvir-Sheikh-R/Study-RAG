@@ -15,17 +15,17 @@ import os
 
 PROJECT_ROOT = Path.cwd().parent 
 
-TOC_KEYWORDS = ("সূচিপত্র", "সুচিপত্র", "বিষয়সূচি")
+TOC_KEYWORDS = ("সূচিপত্র", "সুচিপত্র", "বিষয়সূচি", "CONTENTS", "contents")
 DEFAULT_MATCH_THRESHOLD = 80
 POOPLER_PATH = r"C:\poppler\Library\bin"
 
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,
-    chunk_overlap=200,
+    chunk_size=1500,
+    chunk_overlap=350,
     length_function=len,
     is_separator_regex=False,
-    separators=["\n\n\n", "\n\n", "\n", "।", " ", ""],
+    separators=["\n\n\n\n", "\n\n\n", "\n\n", "\n", "।", " ", ""],
 )
 
 with open(r"D:\AI-ML\AI Projects\Study RAG\chapters.json", "r", encoding="utf-8") as file:
@@ -166,3 +166,68 @@ with open('output_document.txt', 'w', encoding='utf-8') as file:
         file.write(json.dumps({"page_content": doc.page_content, "metadata": doc.metadata}, ensure_ascii=False) + "\n")
 
 print(f"{len(documents)} page-level documents")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# embeddings_store.py
+import json
+from pathlib import Path
+
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+ROOT = Path(r"D:\AI-ML\AI Projects\Study RAG")
+CACHE = ROOT / "embedding_cache"
+model = SentenceTransformer("intfloat/multilingual-e5-large", cache_folder=str(ROOT / "model_cache"))
+
+
+def _path(cls, book, chapter):
+    chapter = "".join("_" if c in '<>:"/\\|?*' else c for c in chapter).strip()
+    return CACHE / cls / book / chapter
+
+
+def make_embeddings(chunks, cls, book, chapter):
+    """chunks: list of LangChain Documents for ONE chapter (already split)."""
+    out = _path(cls, book, chapter)
+    out.mkdir(parents=True, exist_ok=True)
+
+    texts = [c.page_content for c in chunks]
+    vecs = model.encode(["passage: " + t for t in texts],
+                        normalize_embeddings=True, show_progress_bar=True)
+
+    np.save(out / "vectors.npy", vecs)
+    (out / "chunks.json").write_text(
+        json.dumps([{"text": c.page_content, "meta": c.metadata} for c in chunks],
+                   ensure_ascii=False), encoding="utf-8")
+
+
+def get_embeddings(cls, book, chapter):
+    """Returns (vectors, chunks) for one chapter from the cache."""
+    out = _path(cls, book, chapter)
+    vecs = np.load(out / "vectors.npy")
+    chunks = json.loads((out / "chunks.json").read_text(encoding="utf-8"))
+    return vecs, chunks
+
+
+def search(query, cls, book, chapter, k=5):
+    vecs, chunks = get_embeddings(cls, book, chapter)
+    q = model.encode("query: " + query, normalize_embeddings=True)
+    top = np.argsort(-(vecs @ q))[:k]
+    return [chunks[i] for i in top]

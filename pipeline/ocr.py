@@ -5,7 +5,8 @@ import json
 import logging
 from pathlib import Path
 
-from settings.config import Config
+from pipeline.settings.config import Config
+
 
 log = logging.getLogger(__name__)
 

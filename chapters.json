@@ -3564,8 +3564,7 @@
             ]
             },
          "class_9_10": {
-            "arts": {
-                "history": [
+                "arts_history": [
                 { "chapter_number": 1, "chapter_name": "ইতিহাস পরিচিত", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "বিশ্বসভ্যতা", "starting_page": 8 },
                 { "chapter_number": 3, "chapter_name": "প্রাচীন বাংলার জনপদ", "starting_page": 33 },
@@ -3580,7 +3579,7 @@
                 { "chapter_number": 12, "chapter_name": "সামরিক শাসন ও স্বাধিকার আন্দোলন (১৯৫৮-১৯৬৯ খ্রিষ্টাব্দ)", "starting_page": 153 },
                 { "chapter_number": 13, "chapter_name": "বাংলাদেশের মুক্তিযুদ্ধ ও গণআন্দোলন", "starting_page": 165 }
                 ],
-                "science": [
+                "arts_science": [
                 { "chapter_number": 1, "chapter_name": "উন্নততর জীবনধারা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "জীবনের জন্য পানি", "starting_page": 33 },
                 { "chapter_number": 3, "chapter_name": "হৃদযন্ত্রের যত কথা এবং অন্যান্য", "starting_page": 57 },
@@ -3593,7 +3592,7 @@
                 { "chapter_number": 10, "chapter_name": "এসো বলেক জানি", "starting_page": 212 },
                 { "chapter_number": 11, "chapter_name": "প্রাত্যহিক জীবনে তড়িৎ", "starting_page": 230 }
                 ],
-                "economics": [
+                "arts_economics": [
                 { "chapter_number": 1, "chapter_name": "অর্থনীতি পরিচয়", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "অর্থনীতির গুরুত্বপূর্ণ ধারণাসমূহ", "starting_page": 15 },
                 { "chapter_number": 3, "chapter_name": "উপভোগ, চাহিদা, জোগান ও ভারসাম্য", "starting_page": 29 },
@@ -3605,7 +3604,7 @@
                 { "chapter_number": 9, "chapter_name": "বাংলাদেশের গুরুত্বপূর্ণ অর্থনৈতিক প্রসঙ্গ", "starting_page": 119 },
                 { "chapter_number": 10, "chapter_name": "বাংলাদেশ সরকারের অর্থব্যবস্থা", "starting_page": 136 }
                 ],
-                "bhugol": [
+                "arts_bhugol": [
                 { "chapter_number": 1, "chapter_name": "ভূগোল ও পরিবেশ", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "মহাবিশ্ব ও আমাদের পৃথিবী", "starting_page": 8 },
                 { "chapter_number": 3, "chapter_name": "মানচিত্র পঠন ও ব্যবহার", "starting_page": 31 },
@@ -3622,7 +3621,7 @@
                 { "chapter_number": 14, "chapter_name": "বাংলাদেশের প্রাকৃতিক দুর্যোগ", "starting_page": 208 },
                 { "chapter_number": 15, "chapter_name": "টেকসই উন্নয়নঅভীষ্ট (এসডিজি)", "starting_page": 225 }
                 ],
-                "civics": [
+                "arts_civics": [
                 { "chapter_number": 1, "chapter_name": "পৌরনীতি ও নাগরিকতা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "নাগরিক ও নাগরিকতা", "starting_page": 12 },
                 { "chapter_number": 3, "chapter_name": "আইন, স্বাধীনতা ও সাম্য", "starting_page": 22 },
@@ -3633,10 +3632,8 @@
                 { "chapter_number": 8, "chapter_name": "বাংলাদেশের স্থানীয় সরকার ব্যবস্থা", "starting_page": 79 },
                 { "chapter_number": 9, "chapter_name": "নাগরিক সমস্যা ও আমাদের করণীয়", "starting_page": 96 },
                 { "chapter_number": 10, "chapter_name": "বাংলাদেশ ও আন্তর্জাতিক সংগঠন", "starting_page": 113 }
-                ]
-            },
-            "commerce": {
-                "business_entrepreneurship": [
+                ],
+                "commerce_business_entrepreneurship": [
                 { "chapter_number": 1, "chapter_name": "ব্যবসায় পরিচিতি", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "ব্যবসায় উদ্যোগ ও উদ্যোক্তা", "starting_page": 12 },
                 { "chapter_number": 3, "chapter_name": "আত্মকর্মসংস্থান", "starting_page": 23 },
@@ -3650,7 +3647,7 @@
                 { "chapter_number": 11, "chapter_name": "ব্যবসায় নৈতিকতা ও সামাজিক দায়িত্ব", "starting_page": 127 },
                 { "chapter_number": 12, "chapter_name": "সফল উদ্যোক্তাদের জীবনী থেকে শিক্ষণীয়", "starting_page": 137 }
                 ],
-                "science": [
+                "commerce_science": [
                 { "chapter_number": 1, "chapter_name": "উন্নততর জীবনধারা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "জীবনের জন্য পানি", "starting_page": 33 },
                 { "chapter_number": 3, "chapter_name": "হৃদযন্ত্রের যত কথা এবং অন্যান্য", "starting_page": 57 },
@@ -3663,7 +3660,7 @@
                 { "chapter_number": 10, "chapter_name": "এসো বলেক জানি", "starting_page": 212 },
                 { "chapter_number": 11, "chapter_name": "প্রাত্যহিক জীবনে তড়িৎ", "starting_page": 230 }
                 ],
-                "finance_banking": [
+                "commerce_finance_banking": [
                 { "chapter_number": 1, "chapter_name": "অর্থায়ন ও ব্যবসায় অর্থায়ন", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "অর্থায়নের উৎস", "starting_page": 15 },
                 { "chapter_number": 3, "chapter_name": "শেয়ার, বন্ড ও ডিবেঞ্চার", "starting_page": 29 },
@@ -3678,7 +3675,7 @@
                 { "chapter_number": 12, "chapter_name": "ব্যাংক ও গ্রাহক", "starting_page": 118 },
                 { "chapter_number": 13, "chapter_name": "কেন্দ্রীয় ব্যাংক", "starting_page": 124 }
                 ],
-                "accounting": [
+                "commerce_accounting": [
                 { "chapter_number": 1, "chapter_name": "হিসাববিজ্ঞান পরিচিতি", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "লেনদেন", "starting_page": 8 },
                 { "chapter_number": 3, "chapter_name": "দু তরফা দাখিলা পদ্ধতি", "starting_page": 29 },
@@ -3691,10 +3688,8 @@
                 { "chapter_number": 10, "chapter_name": "আর্থিক বিবরণী", "starting_page": 144 },
                 { "chapter_number": 11, "chapter_name": "পণ্যের ক্রয়মূল্য, উৎপাদন ব্যয় ও বিক্রয়মূল্য", "starting_page": 180 },
                 { "chapter_number": 12, "chapter_name": "পারিবারিক ও আত্মকর্মসংস্থানমূলক উদ্যোগের হিসাব", "starting_page": 195 }
-                ]
-            },
-            "general": {
-                "ict": [
+                ],
+                "general_ict": [
                 { "chapter_number": 1, "chapter_name": "তথ্য ও যোগাযোগ প্রযুক্তি ও আমাদের বাংলাদেশ", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "কম্পিউটার রক্ষণাবেক্ষণ ও সাইবার নিরাপত্তা", "starting_page": 15 },
                 { "chapter_number": 3, "chapter_name": "ইন্টারনেট ও ওয়েব পরিচিতি", "starting_page": 42 },
@@ -3702,7 +3697,7 @@
                 { "chapter_number": 5, "chapter_name": "মাল্টিমিডিয়া ও গ্রাফিক্স", "starting_page": 64 },
                 { "chapter_number": 6, "chapter_name": "প্রোগ্রামিংয়ের মাধ্যমে সমস্যার সমাধান", "starting_page": 110 }
                 ],
-                "home_science": [
+                "general_home_science": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "ক বিভাগ : গৃহ ও পারিবারিক সম্পদ ব্যবস্থাপনা",
@@ -3750,7 +3745,7 @@
                     ]
                 }
                 ],
-                "english_grammar": [
+                "general_english_grammar": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "A Grammar",
@@ -3787,7 +3782,7 @@
                     ]
                 }
                 ],
-                "songgit": [
+                "general_songgit": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "প্রথম অধ্যায় : সংগীতের নীতি",
@@ -3818,7 +3813,7 @@
                     "starting_page": 114
                 }
                 ],
-                "songskrito": [
+                "general_songskrito": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "প্রথম ভাগ",
@@ -3887,7 +3882,7 @@
                     ]
                 }
                 ],
-                "physical_education": [
+                "general_physical_education": [
                 { "chapter_number": 1, "chapter_name": "সুষ্ঠুজীবনের জন্য শারীরিক শিক্ষা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "শারীরিক সক্ষমতা", "starting_page": 11 },
                 { "chapter_number": 3, "chapter_name": "মানসিক স্বাস্থ্য ও অবসাদ", "starting_page": 20 },
@@ -3899,7 +3894,7 @@
                 { "chapter_number": 9, "chapter_name": "অ্যাথলেটিকস ও সাঁতার", "starting_page": 115 },
                 { "chapter_number": 10, "chapter_name": "খেলাধুলার দুর্ঘটনা", "starting_page": 139 }
                 ],
-                "math": [
+                "general_math": [
                 { "chapter_number": 1, "chapter_name": "বাস্তব সংখ্যা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "সেট ও ফাংশন", "starting_page": 21 },
                 { "chapter_number": 3, "chapter_name": "বীজগাণিতিক রাশি", "starting_page": 43 },
@@ -3918,7 +3913,7 @@
                 { "chapter_number": 16, "chapter_name": "পরিমিতি", "starting_page": 294 },
                 { "chapter_number": 17, "chapter_name": "পরিসংখ্যান", "starting_page": 326 }
                 ],
-                "english": [
+                "general_english": [
                 { "chapter_number": 1, "chapter_name": "Sense of Self", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "Climate Change", "starting_page": 8 },
                 { "chapter_number": 3, "chapter_name": "Pastimes", "starting_page": 23 },
@@ -3936,7 +3931,7 @@
                 { "chapter_number": 15, "chapter_name": "Media and Modes of E-communication", "starting_page": 185 },
                 { "chapter_number": 16, "chapter_name": "Graffiti", "starting_page": 196 }
                 ],
-                "bangla_grammar": [
+                "general_bangla_grammar": [
                 { "chapter_number": 1, "chapter_name": "ভাষা ও বাংলা ভাষা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "বাংলা ব্যাকরণ", "starting_page": 3 },
                 { "chapter_number": 3, "chapter_name": "বাংলা ভাষার রীতি ও বিভাজন", "starting_page": 5 },
@@ -3987,7 +3982,7 @@
                 { "chapter_number": 48, "chapter_name": "সংবাদ প্রতিবেদন", "starting_page": 170 },
                 { "chapter_number": 49, "chapter_name": "প্রবন্ধ", "starting_page": 174 }
                 ],
-                "bangla_sahitto": [
+                "general_bangla_sahitto": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "গদ্য",
@@ -4056,7 +4051,7 @@
                     ]
                 }
                 ],
-                "art_craft": [
+                "general_art_craft": [
                 { "chapter_number": 1, "chapter_name": "শিল্পকলা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "দেশ-বিদেশের উল্লেখযোগ্য শিল্পী ও শিল্পকর্ম", "starting_page": 11 },
                 { "chapter_number": 3, "chapter_name": "বাঙালি লোকজীবনে চারু ও কারুকলা", "starting_page": 32 },
@@ -4065,7 +4060,7 @@
                 { "chapter_number": 6, "chapter_name": "বাস্তব ও স্মৃতি থেকে অনুশীলন", "starting_page": 74 },
                 { "chapter_number": 7, "chapter_name": "কারুকলা", "starting_page": 80 }
                 ],
-                "agriculture": [
+                "general_agriculture": [
                 { "chapter_number": 1, "chapter_name": "কৃষি প্রযুক্তি", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "কৃষি উপকরণ", "starting_page": 36 },
                 { "chapter_number": 3, "chapter_name": "কৃষি ও জলবায়ু", "starting_page": 70 },
@@ -4074,13 +4069,13 @@
                 { "chapter_number": 6, "chapter_name": "কৃষি সমবায়", "starting_page": 202 },
                 { "chapter_number": 7, "chapter_name": "পারিবারিক খামার", "starting_page": 210 }
                 ],
-                "career": [
+                "general_career": [
                 { "chapter_number": 1, "chapter_name": "আমি ও আমার ক্যারিয়ার", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "ক্যারিয়ার গঠন : গুণ ও দক্ষতা", "starting_page": 23 },
                 { "chapter_number": 3, "chapter_name": "ক্যারিয়ার গঠনে সংযোগ স্থাপন ও আচরণ", "starting_page": 47 },
                 { "chapter_number": 4, "chapter_name": "আমি ও আমার কর্মক্ষেত্র", "starting_page": 63 }
                 ],
-                "bangla_sohopath": [
+                "general_bangla_sohopath": [
                 {
                     "chapter_number": 1,
                     "chapter_name": "উপন্যাস",
@@ -4104,7 +4099,7 @@
                     ]
                 }
                 ],
-                "bgs": [
+                "general_bgs": [
                 { "chapter_number": 1, "chapter_name": "পূর্ব বাংলার আন্দোলন ও জাতীয়তাবাদের উথান (১৯৪৭-১৯৭০)", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "বাংলাদেশের স্বাধীনতা", "starting_page": 14 },
                 { "chapter_number": 3, "chapter_name": "সৌরজগৎ ও ভূমণ্ডল", "starting_page": 26 },
@@ -4120,10 +4115,8 @@
                 { "chapter_number": 13, "chapter_name": "বাংলাদেশের পরিবার কাঠামো ও সামাজিকীকরণ", "starting_page": 164 },
                 { "chapter_number": 14, "chapter_name": "বাংলাদেশের সামাজিক পরিবর্তন", "starting_page": 178 },
                 { "chapter_number": 15, "chapter_name": "বাংলাদেশের সামাজিক সমস্যা ও প্রতিকার", "starting_page": 185 }
-                ]
-            },
-            "science": {
-                "higher_math": [
+                ],
+                "science_higher_math": [
                 { "chapter_number": 1, "chapter_name": "সেট ও ফাংশন", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "বীজগাণিতিক রাশি", "starting_page": 38 },
                 { "chapter_number": 3, "chapter_name": "জ্যামিতি", "starting_page": 63 },
@@ -4139,7 +4132,7 @@
                 { "chapter_number": 13, "chapter_name": "ঘন জ্যামিতি", "starting_page": 287 },
                 { "chapter_number": 14, "chapter_name": "সম্ভাবনা", "starting_page": 306 }
                 ],
-                "physics": [
+                "science_physics": [
                 { "chapter_number": 1, "chapter_name": "ভৌত রাশি এবং তাদের পরিমাপ", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "গতি", "starting_page": 32 },
                 { "chapter_number": 3, "chapter_name": "বল", "starting_page": 62 },
@@ -4154,7 +4147,7 @@
                 { "chapter_number": 12, "chapter_name": "বিদ্যুতের চৌম্বক ক্রিয়া", "starting_page": 329 },
                 { "chapter_number": 13, "chapter_name": "তেজস্ক্রিয়তা ও ইলেকট্রনিকস", "starting_page": 346 }
                 ],
-                "biology": [
+                "science_biology": [
                 { "chapter_number": 1, "chapter_name": "জীবনপাঠ", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "জীবকোষ ও টিস্যু", "starting_page": 17 },
                 { "chapter_number": 3, "chapter_name": "কোষ বিভাজন", "starting_page": 50 },
@@ -4170,7 +4163,7 @@
                 { "chapter_number": 13, "chapter_name": "জীবের পরিবেশ", "starting_page": 282 },
                 { "chapter_number": 14, "chapter_name": "জীবপ্রযুক্তি", "starting_page": 305 }
                 ],
-                "chemistry": [
+                "science_chemistry": [
                 { "chapter_number": 1, "chapter_name": "রসায়নের ধারণা", "starting_page": 1 },
                 { "chapter_number": 2, "chapter_name": "পদার্থের অবস্থা", "starting_page": 17 },
                 { "chapter_number": 3, "chapter_name": "পদার্থের গঠন", "starting_page": 35 },
@@ -4184,7 +4177,6 @@
                 { "chapter_number": 11, "chapter_name": "খনিজ সম্পদ: জীবাশ্ম", "starting_page": 261 },
                 { "chapter_number": 12, "chapter_name": "আমাদের জীবনে রসায়ন", "starting_page": 287 }
                 ]
-            }
         }
     }
 }

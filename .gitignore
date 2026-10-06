@@ -10,3 +10,8 @@ extracted_text/
 bangla_book_db/
 ocr_cache/
 book_cache_chapter/
+node_modules/
+.next/
+.npm-cache/
+.preview/
+backend/data/threads/*.json

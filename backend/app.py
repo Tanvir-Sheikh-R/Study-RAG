@@ -20,7 +20,6 @@ from backend.rag import (
     cached_book_paths,
     model_info,
     search,
-    search_across_book,
     stream_answer,
     warm_up,
 )
@@ -37,8 +36,6 @@ from backend.schemas import (
 )
 
 logger = logging.getLogger("boibondhu")
-
-SNIPPET_LIMIT = 400
 
 
 @asynccontextmanager
@@ -90,33 +87,10 @@ def _to_thread_detail(document: dict[str, Any]) -> ThreadDetail:
     )
 
 
-def _source_payload(hit: dict[str, Any]) -> dict[str, Any]:
-    text = str(hit.get("text", ""))
-    return {
-        "chapter": hit.get("chapter"),
-        "part": hit.get("part"),
-        "writer_name": hit.get("writer_name"),
-        "page_start": hit.get("page_start"),
-        "page_end": hit.get("page_end"),
-        "snippet": text[:SNIPPET_LIMIT],
-    }
-
-
 def _retrieve(context: dict[str, Any], query: str) -> tuple[list[dict[str, Any]], str | None]:
-    """Chapter-scoped retrieval, falling back to the whole book when uncached."""
-    book = context["book"]
-    chapter = context["chapter"]
-    try:
-        hits = search(book, chapter, query)
-    except (FileNotFoundError, ValueError):
-        hits = []
-    if hits:
-        return hits, None
-
-    fallback = search_across_book(book, query)
-    if fallback:
-        return fallback, "এই অধ্যায়ের জন্য সূচি তৈরি হয়নি — পুরো বই থেকে খোঁজা হয়েছে।"
-    return [], "এই বইটির জন্য এখনো সূচি (embedding) তৈরি হয়নি।"
+    """Retrieve from the vector store for the selected chapter."""
+    hits = search(context["book"], context["chapter"], query)
+    return hits, None
 
 
 def _event(payload: dict[str, Any]) -> str:
@@ -124,24 +98,22 @@ def _event(payload: dict[str, Any]) -> str:
 
 
 def _chat_stream(thread_id: str, context: dict[str, Any], question: str) -> Iterator[str]:
-    """Emit NDJSON events: status → sources → delta* → done | error."""
+    """Emit NDJSON events: status → delta* → done | error."""
     yield _event({"type": "status", "stage": "searching", "message": "পাঠ্যবই খোঁজা হচ্ছে..."})
 
     try:
-        hits, warning = _retrieve(context, question)
+        hits, _warning = _retrieve(context, question)
     except Exception as exc:  # noqa: BLE001 - surfaced to the client as an error event
         logger.exception("Retrieval failed")
         yield _event({"type": "error", "message": f"খোঁজার সময় সমস্যা হয়েছে: {exc}"})
         return
 
     if not hits:
-        message = warning or "কোনো প্রাসঙ্গিক অংশ পাওয়া যায়নি।"
-        store.append_message(thread_id, {"role": "assistant", "content": message, "sources": []})
+        message = "কোনো প্রাসঙ্গিক অংশ পাওয়া যায়নি।"
+        store.append_message(thread_id, {"role": "assistant", "content": message})
         yield _event({"type": "error", "message": message})
         return
 
-    sources = [_source_payload(hit) for hit in hits]
-    yield _event({"type": "sources", "sources": sources, "warning": warning})
     yield _event({"type": "status", "stage": "answering", "message": "উত্তর লেখা হচ্ছে..."})
 
     collected: list[str] = []
@@ -159,9 +131,7 @@ def _chat_stream(thread_id: str, context: dict[str, Any], question: str) -> Iter
         yield _event({"type": "error", "message": "মডেল কোনো উত্তর দেয়নি। আবার চেষ্টা করুন।"})
         return
 
-    document = store.append_message(
-        thread_id, {"role": "assistant", "content": answer, "sources": sources}
-    )
+    document = store.append_message(thread_id, {"role": "assistant", "content": answer})
     yield _event(
         {
             "type": "done",

@@ -11,6 +11,9 @@ export type Chapter = {
   number: number | string | null;
   starting_page: number | null;
   sub_chapters: SubChapter[];
+  /** Set when this chapter is a sub-chapter (the vector store is keyed by sub-chapter). */
+  parent?: string;
+  writer_name?: string | null;
 };
 
 export type Subject = {
@@ -51,20 +54,9 @@ export type ChapterContext = {
   chapter: string;
 };
 
-export type Source = {
-  chapter: string | null;
-  part: string | null;
-  writer_name: string | null;
-  page_start: number | null;
-  page_end: number | null;
-  snippet: string;
-};
-
 export type ChatMessage = {
   role: "user" | "assistant";
   content: string;
-  sources: Source[];
-  created_at: string;
 };
 
 export type ThreadSummary = {
@@ -105,7 +97,6 @@ export type StreamStatus = "searching" | "answering";
 
 export type StreamEvent =
   | { type: "status"; stage: StreamStatus; message: string }
-  | { type: "sources"; sources: Source[]; warning: string | null }
   | { type: "delta"; text: string }
   | { type: "done"; thread_id: string; title: string; updated_at: string }
   | { type: "error"; message: string };

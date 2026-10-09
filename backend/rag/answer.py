@@ -7,8 +7,9 @@ from typing import Any, Iterator
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_deepseek import ChatDeepSeek
+from langchain_groq import ChatGroq
 
-from backend.config import LLM_MAX_TOKENS, LLM_MODEL, LLM_TEMPERATURE
+from backend.config import LLM_MAX_TOKENS, LLM_MODEL, LLM_MODEL_GROQ, LLM_TEMPERATURE
 
 PROMPT = PromptTemplate.from_template(
     """তুমি একজন বাংলাদেশি শিক্ষক, শিক্ষার্থীদের পাঠ্যবই থেকে পড়াতে সাহায্য করো।
@@ -28,8 +29,30 @@ PROMPT = PromptTemplate.from_template(
 )
 
 
-def build_llm() -> ChatDeepSeek:
-    return ChatDeepSeek(model=LLM_MODEL, temperature=LLM_TEMPERATURE, max_tokens=LLM_MAX_TOKENS)
+def build_llm_deepseek(
+    temperature: float | None = None,
+    max_tokens: int | None = None,
+    **kwargs: Any,
+) -> ChatDeepSeek:
+    return ChatDeepSeek(
+        model=LLM_MODEL,
+        temperature=LLM_TEMPERATURE if temperature is None else temperature,
+        max_tokens=LLM_MAX_TOKENS if max_tokens is None else max_tokens,
+        **kwargs,
+    )
+
+def build_llm(
+    temperature: float | None = None,
+    max_tokens: int | None = None,
+    **kwargs: Any,
+) -> ChatGroq:
+    return ChatGroq(
+        model=LLM_MODEL_GROQ,
+        temperature=LLM_TEMPERATURE if temperature is None else temperature,
+        max_tokens=LLM_MAX_TOKENS if max_tokens is None else max_tokens,
+        **kwargs,
+    )
+
 
 
 def build_chain():

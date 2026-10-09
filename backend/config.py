@@ -32,7 +32,8 @@ HYBRID_WEIGHTS = (0.4, 0.6)  # (bm25, dense)
 
 # "deepseek-flash" exists but returns empty content; deepseek-chat is the working model.
 LLM_MODEL = "deepseek-chat"
-LLM_TEMPERATURE = 0.2
+LLM_MODEL_GROQ = "openai/gpt-oss-120b"
+LLM_TEMPERATURE = 1
 LLM_MAX_TOKENS = 2048
 
 TOC_KEYWORDS = ("সূচিপত্র", "সুচিপত্র", "বিষয়সূচি", "CONTENTS", "contents")

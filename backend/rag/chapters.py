@@ -14,6 +14,7 @@ the single implementation of that lookup plus the book path spoken by embedding_
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import unicodedata
@@ -146,7 +147,14 @@ def chapters_of(class_id: str, stream: str | None, subject: str) -> list[dict[st
 
 
 def subject_label(subject: str) -> str:
-    return SUBJECT_LABELS.get(subject, subject.replace("_", " ").strip().title())
+    if subject in SUBJECT_LABELS:
+        return SUBJECT_LABELS[subject]
+    # class_9_10 keys are flattened "stream_subject" (e.g. arts_history): label both parts.
+    for stream, stream_label in STREAM_LABELS.items():
+        if subject.startswith(stream + "_"):
+            bare = subject[len(stream) + 1 :]
+            return f"{stream_label} · {SUBJECT_LABELS.get(bare, bare.replace('_', ' ').title())}"
+    return subject.replace("_", " ").strip().title()
 
 
 def class_label(class_id: str) -> str:
@@ -154,18 +162,33 @@ def class_label(class_id: str) -> str:
 
 
 def book_path(class_id: str, subject: str, stream: str | None = None) -> str:
-    """The path key used by embedding_cache directories: class/subject or class/stream/subject.
+    """The path key used by embedding_cache directories.
 
-    class_9_10 nests a stream between class and subject, which is exactly how the PDFs
-    are laid out on disk (pdf/Class_9_10/General/English.pdf).
+    class_9_10 is laid out flat on disk: its PDFs are pdf/Class_9_10/General_English.pdf
+    and its cache dirs are embedding_cache/class_9_10/general_english/, so stream and
+    subject are joined with an underscore (matching the notebook's class_number/book_name
+    convention). Every other class is just class_id/subject.
     """
-    return f"{class_id}/{stream}/{subject}" if stream else f"{class_id}/{subject}"
+    if stream:
+        return f"{class_id}/{stream}_{subject}"
+    return f"{class_id}/{subject}"
 
 
 def normalize_name(name: str) -> str:
     """Unicode-normalise and collapse whitespace so names compare reliably."""
     normalized = unicodedata.normalize("NFC", name)
     return re.sub(r"\s+", " ", normalized).strip()
+
+
+def normalize_chapter_ref(chapter: str) -> str:
+    """Strip a leading "1. " / "১. " numbering prefix and normalise Unicode.
+
+    The UI passes chapter labels like "1. বৈচিত্র্যময় বাংলাদেশ" while the index and
+    cache dirs use the bare name; both should resolve to the same chapter.
+    """
+    name = normalize_name(chapter)
+    stripped = re.sub(r"^\s*(?:[\d০-৯]+)\s*[.)\-]?\s*", "", name)
+    return stripped or name
 
 
 def chapter_dir_name(chapter: str) -> str:
@@ -180,12 +203,21 @@ def _loose(name: str) -> str:
     return re.sub(r"[\s_\-]+", "", normalized)
 
 
+def _chapter_hash(chapter: str) -> str:
+    """The notebook's hashed cache key: md5(bare chapter name)[:10]."""
+    return hashlib.md5(normalize_chapter_ref(chapter).encode("utf-8")).hexdigest()[:10]
+
+
 def book_has_vectors(book: str) -> bool:
     """True when a book's cache dir holds at least one embedded chapter."""
     directory = EMBEDDING_CACHE.joinpath(*book.split("/"))
     if not directory.is_dir():
         return False
-    return any((child / "vectors.npy").exists() for child in directory.iterdir() if child.is_dir())
+    return any(
+        (child / "vectors.npy").exists() or (child / "index.faiss").exists()
+        for child in directory.iterdir()
+        if child.is_dir()
+    )
 
 
 def cached_book_paths() -> set[str]:
@@ -210,25 +242,51 @@ def all_book_paths() -> list[str]:
 
 
 def cached_chapter_dirs(book: str) -> set[str]:
+    """Chapter cache dir names for a book (hashed dirs preferred, old names included)."""
     directory = EMBEDDING_CACHE.joinpath(*book.split("/"))
     if not directory.is_dir():
         return set()
-    return {child.name for child in directory.iterdir() if (child / "vectors.npy").exists()}
+    found: set[str] = set()
+    for child in directory.iterdir():
+        if not child.is_dir():
+            continue
+        if (child / "vectors.npy").exists() or (child / "index.faiss").exists():
+            found.add(child.name)
+    return found
 
 
 def find_chapter_dir(book: str, chapter: str) -> Path | None:
-    """Locate a chapter's cache dir, tolerating sanitiser/typo drift in names."""
+    """Locate a chapter's cache dir in either the hashed or legacy layout.
+
+    The notebook now stores chapters as md5(name)[:10] folders holding FAISS
+    index.faiss/index.pkl, with chapter_name.txt as the sidecar that maps back to the
+    real name. Legacy long-name folders holding vectors.npy are still read as fallback.
+    """
     directory = EMBEDDING_CACHE.joinpath(*book.split("/"))
     if not directory.is_dir():
         return None
 
-    wanted = chapter_dir_name(chapter)
+    bare = normalize_chapter_ref(chapter)
+
+    # 1) Hashed folder, exact key the notebook uses.
+    hashed = directory / _chapter_hash(bare)
+    if (hashed / "index.faiss").exists():
+        return hashed
+
+    # 2) Hashed folder by chapter_name.txt sidecar (tolerates prefix drift).
+    for child in directory.iterdir():
+        sidecar = child / "chapter_name.txt"
+        if (child / "index.faiss").exists() and sidecar.exists():
+            if normalize_chapter_ref(sidecar.read_text(encoding="utf-8")) == bare:
+                return child
+
+    # 3) Legacy long-name folders (vectors.npy).
+    wanted = chapter_dir_name(bare)
     candidates = [
         directory / wanted,
-        directory / normalize_name(chapter),
+        directory / normalize_name(bare),
         directory / wanted.replace("_", " "),
         directory / wanted.replace(" ", "_"),
-        directory / wanted.replace("_", "/"),
     ]
     for candidate in candidates:
         if (candidate / "vectors.npy").exists():
@@ -248,9 +306,44 @@ def chapter_label(chapter: dict[str, Any]) -> str:
 
 
 def build_tree() -> list[dict[str, Any]]:
-    """Class → subjects (with stream when nested) → chapters, for the selection modal."""
+    """Class → subjects → chapters, for the selection modal.
+
+    The vector store is keyed by sub-chapter name where a chapter has sub_chapters, so
+    sub-chapters are flattened into the chapter list (each carries its parent name).
+    """
     tree: list[dict[str, Any]] = []
     cached = cached_book_paths()
+
+    def chapter_entries(chapters: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        entries: list[dict[str, Any]] = []
+        for chapter in chapters:
+            subs = chapter.get("sub_chapters") or []
+            if subs:
+                for sub in subs:
+                    entries.append(
+                        {
+                            "name": str(sub.get("sub_chapter_name") or _UNKNOWN_CHAPTER),
+                            "chapter_name": str(sub.get("sub_chapter_name") or _UNKNOWN_CHAPTER),
+                            "number": sub.get("sub_chapter_number"),
+                            "starting_page": sub.get("starting_page"),
+                            "sub_chapters": [],
+                            "parent": str(chapter.get("chapter_name") or _UNKNOWN_CHAPTER),
+                            "writer_name": sub.get("writer_name"),
+                        }
+                    )
+            else:
+                entries.append(
+                    {
+                        "name": str(chapter.get("chapter_name") or _UNKNOWN_CHAPTER),
+                        "chapter_name": str(chapter.get("chapter_name") or _UNKNOWN_CHAPTER),
+                        "number": chapter.get("chapter_number"),
+                        "starting_page": chapter.get("starting_page"),
+                        "sub_chapters": [],
+                        "parent": None,
+                        "writer_name": None,
+                    }
+                )
+        return entries
 
     for class_id in known_classes():
         streams = streams_of(class_id)
@@ -268,24 +361,7 @@ def build_tree() -> list[dict[str, Any]]:
                     "label": subject_label(subject),
                     "book": book,
                     "indexed": book in cached,
-                    "chapters": [
-                        {
-                            "name": chapter_label(chapter),
-                            "chapter_name": str(chapter.get("chapter_name") or _UNKNOWN_CHAPTER),
-                            "number": chapter.get("chapter_number"),
-                            "starting_page": chapter.get("starting_page"),
-                            "sub_chapters": [
-                                {
-                                    "name": str(sub.get("sub_chapter_name") or _UNKNOWN_CHAPTER),
-                                    "number": sub.get("sub_chapter_number"),
-                                    "starting_page": sub.get("starting_page"),
-                                    "writer_name": sub.get("writer_name"),
-                                }
-                                for sub in (chapter.get("sub_chapters") or [])
-                            ],
-                        }
-                        for chapter in chapters
-                    ],
+                    "chapters": chapter_entries(chapters),
                 }
             )
 

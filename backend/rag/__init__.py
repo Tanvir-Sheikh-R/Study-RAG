@@ -10,13 +10,7 @@ from backend.rag.chapters import (
     subject_label,
 )
 from backend.rag.embeddings import model_info, warm_up
-from backend.rag.retriever import (
-    cache_summary,
-    get_retriever,
-    is_cached,
-    search,
-    search_across_book,
-)
+from backend.rag.retriever import search
 
 __all__ = [
     "build_chain",
@@ -30,9 +24,5 @@ __all__ = [
     "subject_label",
     "model_info",
     "warm_up",
-    "cache_summary",
-    "get_retriever",
-    "is_cached",
     "search",
-    "search_across_book",
 ]

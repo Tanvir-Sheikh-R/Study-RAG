@@ -45,20 +45,9 @@ class ChatStart(ChatMessageIn):
     context: ChapterContext
 
 
-class SourceOut(BaseModel):
-    chapter: str | None = None
-    part: str | None = None
-    writer_name: str | None = None
-    page_start: int | None = None
-    page_end: int | None = None
-    snippet: str
-
-
 class MessageOut(BaseModel):
     role: Literal["user", "assistant"]
     content: str
-    sources: list[SourceOut] = Field(default_factory=list)
-    created_at: str
 
 
 class ThreadSummary(BaseModel):

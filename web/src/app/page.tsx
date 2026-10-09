@@ -13,7 +13,6 @@ import type {
   ChapterContext,
   ChatMessage,
   Health,
-  Source,
   ThreadDetail,
   ThreadGroup,
   TreeResponse,
@@ -64,8 +63,6 @@ export default function Page() {
   const [streaming, setStreaming] = useState(false);
   const [streamingText, setStreamingText] = useState("");
   const [statusLabel, setStatusLabel] = useState<string | null>(null);
-  const [activeSources, setActiveSources] = useState<Source[]>([]);
-  const [warning, setWarning] = useState<string | null>(null);
 
   const [modal, setModal] = useState<ModalState | null>(null);
   const [section, setSection] = useState<SidebarSection>("home");
@@ -164,8 +161,6 @@ export default function Page() {
         await startThread(picked);
       }
       setModal(null);
-      setActiveSources([]);
-      setWarning(null);
     },
     [activeThreadId, modal?.mode, refreshThreads, startThread],
   );
@@ -183,8 +178,6 @@ export default function Page() {
         setContext(toContext(detail));
         setStreamingText("");
         setStatusLabel(null);
-        setActiveSources([]);
-        setWarning(null);
         setNavOpen(false);
       } catch (error) {
         pushToast("error", error instanceof Error ? error.message : "চ্যাট লোড হয়নি।");
@@ -205,20 +198,14 @@ export default function Page() {
     }
 
     setInput("");
-    setActiveSources([]);
-    setWarning(null);
     setStreamingText("");
     setStatusLabel("পাঠ্যবই খোঁজা হচ্ছে...");
     setStreaming(true);
-    setMessages((current) => [
-      ...current,
-      { role: "user", content: question, sources: [], created_at: new Date().toISOString() },
-    ]);
+    setMessages((current) => [...current, { role: "user", content: question }]);
 
     const controller = new AbortController();
     abortRef.current = controller;
     let answer = "";
-    let sources: Source[] = [];
     let failed: string | null = null;
 
     try {
@@ -226,11 +213,6 @@ export default function Page() {
         switch (event.type) {
           case "status":
             setStatusLabel(event.message);
-            break;
-          case "sources":
-            sources = event.sources;
-            setActiveSources(event.sources);
-            setWarning(event.warning);
             break;
           case "delta":
             answer += event.text;
@@ -261,18 +243,9 @@ export default function Page() {
         pushToast("error", failed);
       }
       if (answer) {
-        setMessages((current) => [
-          ...current,
-          {
-            role: "assistant",
-            content: answer,
-            sources: failed && !answer ? [] : sources,
-            created_at: new Date().toISOString(),
-          },
-        ]);
+        setMessages((current) => [...current, { role: "assistant", content: answer }]);
       }
       setStreamingText("");
-      setActiveSources([]);
       void refreshThreads();
     }
   }, [activeThreadId, context, input, pushToast, refreshThreads, streaming]);
@@ -438,8 +411,6 @@ export default function Page() {
                 messages={messages}
                 streamingText={streamingText}
                 statusLabel={statusLabel}
-                sources={activeSources}
-                warning={warning}
               />
             )
           ) : null}

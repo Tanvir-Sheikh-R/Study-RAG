@@ -1,9 +1,10 @@
 """Hybrid BM25 + dense retrieval over a single chapter's cached embeddings.
 
-Mirrors retrieval cell of pipeline/pdf_to_document_cleanV2.ipynb: the dense half is a
-FAISS index built from the vectors already stored in embedding_cache, so nothing is
-re-embedded at query time. Results are cached per chapter because the BM25 index and
-FAISS store are built from disk once.
+Follows the retrieval cell of pipeline/pdf_to_document_cleanV2.ipynb: each chapter
+folder holds a FAISS index (index.faiss/index.pkl) plus its chunks (chunks.json), so
+nothing is re-embedded at query time. BM25 is rebuilt from chunks.json here because
+the notebook pickles its own in-notebook tokenizer object, which is not importable
+outside that module. Legacy long-name folders with vectors.npy are still supported.
 """
 
 from __future__ import annotations
@@ -14,7 +15,6 @@ import threading
 from functools import lru_cache
 from typing import Any
 
-import numpy as np
 from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores import FAISS
 from langchain_classic.retrievers import EnsembleRetriever
@@ -23,7 +23,7 @@ from langchain_core.embeddings import Embeddings
 
 from backend.config import HYBRID_K, HYBRID_WEIGHTS
 from backend.rag.chapters import find_chapter_dir
-from backend.rag.embeddings import encode_query, model_info
+from backend.rag.embeddings import encode_query
 
 _build_lock = threading.Lock()
 
@@ -33,12 +33,12 @@ _BANGLA_PUNCTUATION = re.compile(r"[।,;:!?\"'()\[\]{}\-—–“”‘’]")
 class E5QueryEmbeddings(Embeddings):
     """Query-side embeddings for FAISS.
 
-    The dense index is always built from vectors.npy, so only query embedding is
-    implemented; FAISS also probes its embedding callable directly, hence __call__.
+    The dense index is loaded from disk, so only query embedding is needed; FAISS also
+    probes its embedding callable directly, hence __call__.
     """
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("The dense index is built from cached vectors.")
+        raise NotImplementedError("The dense index is loaded from the cached FAISS store.")
 
     def embed_query(self, text: str) -> list[float]:
         return encode_query(text).tolist()
@@ -51,29 +51,43 @@ def _bn_tokenize(text: str) -> list[str]:
     return _BANGLA_PUNCTUATION.sub(" ", text).split()
 
 
+def _load_documents(directory) -> list[Document]:
+    """Reconstruct LangChain documents from a cache folder's chunks.json."""
+    chunks = json.loads((directory / "chunks.json").read_text(encoding="utf-8"))
+    return [
+        Document(page_content=item["text"], metadata=item.get("meta") or {}) for item in chunks
+    ]
+
+
+def _load_dense(directory, documents: list[Document]):
+    """Load the dense retriever: FAISS index from disk, else rebuild from vectors.npy."""
+    if (directory / "index.faiss").exists():
+        vectorstore = FAISS.load_local(
+            str(directory), E5QueryEmbeddings(), allow_dangerous_deserialization=True
+        )
+    elif (directory / "vectors.npy").exists():
+        import numpy as np
+
+        vectors = np.load(directory / "vectors.npy")
+        vectorstore = FAISS.from_embeddings(
+            text_embeddings=list(zip([doc.page_content for doc in documents], vectors)),
+            embedding=E5QueryEmbeddings(),
+            metadatas=[doc.metadata for doc in documents],
+        )
+    else:
+        raise FileNotFoundError(f"No FAISS index or vectors in {directory}")
+    return vectorstore.as_retriever(search_kwargs={"k": HYBRID_K})
+
+
 @lru_cache(maxsize=32)
 def _build(book: str, chapter: str):
     directory = find_chapter_dir(book, chapter)
     if directory is None:
         raise FileNotFoundError(f"No cached embeddings for {book} / {chapter}")
 
-    chunks = json.loads((directory / "chunks.json").read_text(encoding="utf-8"))
-    vectors = np.load(directory / "vectors.npy")
-    if len(chunks) != len(vectors):
-        raise ValueError(
-            f"Cache mismatch in {directory.name}: {len(chunks)} chunks vs {len(vectors)} vectors"
-        )
+    documents = _load_documents(directory)
+    dense = _load_dense(directory, documents)
 
-    documents = [
-        Document(page_content=item["text"], metadata=item.get("meta") or {}) for item in chunks
-    ]
-    vectorstore = FAISS.from_embeddings(
-        text_embeddings=list(zip([doc.page_content for doc in documents], vectors)),
-        embedding=E5QueryEmbeddings(),
-        metadatas=[doc.metadata for doc in documents],
-    )
-
-    dense = vectorstore.as_retriever(search_kwargs={"k": HYBRID_K})
     bm25 = BM25Retriever.from_documents(documents, preprocess_func=_bn_tokenize)
     bm25.k = HYBRID_K
 
@@ -83,33 +97,6 @@ def _build(book: str, chapter: str):
 def get_retriever(book: str, chapter: str) -> EnsembleRetriever:
     with _build_lock:
         return _build(book, chapter)
-
-
-def is_cached(book: str, chapter: str) -> bool:
-    return find_chapter_dir(book, chapter) is not None
-
-
-def search_across_book(book: str, query: str, k: int = HYBRID_K) -> list[dict[str, Any]]:
-    """Fallback when the requested chapter has no cache: rank every cached chapter."""
-    from backend.rag.chapters import cached_chapter_dirs
-
-    merged: dict[str, dict[str, Any]] = {}
-    for chapter in sorted(cached_chapter_dirs(book)):
-        try:
-            hits = search(book, chapter, query, k=k)
-        except (FileNotFoundError, ValueError):
-            continue
-        for rank, hit in enumerate(hits):
-            text = hit["text"]
-            if text in merged:
-                merged[text]["rank"] += 1 / (rank + 1)
-            else:
-                merged[text] = {**hit, "rank": 1 / (rank + 1)}
-
-    ordered = sorted(merged.values(), key=lambda item: item["rank"], reverse=True)
-    for item in ordered:
-        item.pop("rank", None)
-    return ordered[:k]
 
 
 def search(book: str, chapter: str, query: str, k: int = HYBRID_K) -> list[dict[str, Any]]:
@@ -128,17 +115,3 @@ def search(book: str, chapter: str, query: str, k: int = HYBRID_K) -> list[dict[
             }
         )
     return hits
-
-
-def cache_summary(book: str, chapter: str) -> dict[str, Any]:
-    directory = find_chapter_dir(book, chapter)
-    if directory is None:
-        return {"cached": False}
-    vectors = np.load(directory / "vectors.npy")
-    return {
-        "cached": True,
-        "directory": str(directory),
-        "chunks": int(vectors.shape[0]),
-        "dimension": int(vectors.shape[1]),
-        "embedding_dimension": model_info()["dimension"],
-    }

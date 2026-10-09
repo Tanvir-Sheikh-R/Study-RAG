@@ -191,7 +191,8 @@ export function SelectionModal({
               </option>
               {visibleChapters.map((chapter) => (
                 <option key={`${chapter.number}-${chapter.name}`} value={chapter.name}>
-                  {chapter.name}
+                  {chapter.parent ? `${chapter.parent} — ${chapter.name}` : chapter.name}
+                  {chapter.writer_name ? ` · ${chapter.writer_name}` : ""}
                   {chapter.starting_page ? ` — পৃষ্ঠা ${chapter.starting_page}` : ""}
                 </option>
               ))}

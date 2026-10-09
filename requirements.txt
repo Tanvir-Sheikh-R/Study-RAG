@@ -23,3 +23,6 @@ rapidfuzz
 easyocr
 faiss-cpu
 laya
+fastapi
+uvicorn
+langchain_community

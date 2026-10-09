@@ -16,7 +16,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="bn" className={bengali.variable}>
+    // suppressHydrationWarning covers third-party attributes injected into <html>
+    // before hydration (dark-mode and reading extensions such as Night Eye add
+    // e.g. nighteye="disabled"), which React otherwise reports as a mismatch.
+    // It only applies to this element's own attributes, not to the tree below it.
+    <html lang="bn" className={bengali.variable} suppressHydrationWarning>
       <body className="font-[family-name:var(--font-bengali)] antialiased">{children}</body>
     </html>
   );

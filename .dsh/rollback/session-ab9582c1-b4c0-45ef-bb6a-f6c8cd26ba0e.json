@@ -2,7 +2,7 @@
   "version": 2,
   "sessionId": "session-ab9582c1-b4c0-45ef-bb6a-f6c8cd26ba0e",
   "cwd": "D:\\AI-ML\\AI Projects\\Study RAG",
-  "updatedAt": 1791292808598,
+  "updatedAt": 1791542682044,
   "checkpoints": [
     {
       "turn": 1,
@@ -1149,6 +1149,30 @@
       "after": {
         "commit": "4b213c5d7bb0e1c3e30ba7e6da1bb5e03868e1ed",
         "time": 1791292805403
+      }
+    },
+    {
+      "turn": 5,
+      "commit": "1053df3bae84ca04f01a8a992616f9b58d077a26",
+      "parent": "4b213c5d7bb0e1c3e30ba7e6da1bb5e03868e1ed",
+      "time": 1791541829385,
+      "untracked": [],
+      "truncated": false,
+      "after": {
+        "commit": "d98638a363676d3e66450563b0c2aa29d27db043",
+        "time": 1791541840246
+      }
+    },
+    {
+      "turn": 6,
+      "commit": "c7b13828bffd34438062a1cbb81ac0d0c7655302",
+      "parent": "d98638a363676d3e66450563b0c2aa29d27db043",
+      "time": 1791542620629,
+      "untracked": [],
+      "truncated": false,
+      "after": {
+        "commit": "eb821048db81f2422ca6a82caaf6380c4607e7e7",
+        "time": 1791542679265
       }
     }
   ],

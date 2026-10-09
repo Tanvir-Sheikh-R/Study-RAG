@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // The dev server is reached as 127.0.0.1 by tooling and as localhost in the browser;

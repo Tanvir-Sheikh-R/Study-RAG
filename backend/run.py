@@ -22,8 +22,7 @@ PORT = 8000
 
 
 def main() -> None:
-    uvicorn.run("backend.app:app", host=HOST, port=PORT, log_level="info")
-
+    uvicorn.run("backend.app:app", host=HOST, port=PORT, log_level="info", reload=True)
 
 if __name__ == "__main__":
     main()

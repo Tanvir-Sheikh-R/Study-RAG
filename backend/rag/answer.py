@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Iterator
+from typing import Any, Iterable, Iterator, Mapping
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
@@ -17,7 +17,10 @@ load_dotenv()  # loads .env for LLM keys, if present
 PROMPT = PromptTemplate.from_template(
     """তুমি একটি সহায়ক Study RAG assistant। তোমার কাজ হলো শিক্ষার্থীর দেওয়া পাঠ্যবইয়ের অংশ, প্রেক্ষাপট (retrieved context) ব্যবহার করে নির্ভুল, সহজবোধ্য এবং পরীক্ষার উপযোগী উত্তর দেওয়া।
 
-        শিক্ষার্থীর প্রশ্ন: {query}
+        আগের কথোপকথন:
+        {history}
+
+        শিক্ষার্থীর সর্বশেষ প্রশ্ন: {query}
 
         পাঠ্যবইয়ের প্রাসঙ্গিক অংশ:
         {content}
@@ -25,6 +28,7 @@ PROMPT = PromptTemplate.from_template(
         # নিয়ম:
             - প্রাথমিক ও সবচেয়ে গুরুত্বপূর্ণ উৎস হিসেবে দেওয়া পাঠ্যবইয়ের অংশ এবং retrieved context ব্যবহার করো।
             - ব্যবহারকারীর প্রশ্নটি follow-up question কি না যাচাই করো। Follow-up হলে আগের কথোপকথন, retrieved context এবং প্রয়োজন হলে সীমিত মৌলিক জ্ঞানের ভিত্তিতে উত্তর দাও।
+            - Follow-up প্রশ্নের ক্ষেত্রে আগে আগের কথোপকথনে দেওয়া উত্তর ব্যবহার করো। নতুন পাঠ্যবইয়ের অংশ না থাকলে সেটি সমস্যা নয়; আগের উত্তর থেকেই সরাসরি উত্তর দাও।
             - পাঠ্যবই বা retrieved context-এ উত্তর থাকলে নিজের বাইরের জ্ঞান যোগ করো না, যদি না তা বিষয়টি বোঝাতে একান্ত প্রয়োজন হয়।
             - নিজের জ্ঞান ব্যবহার করা যাবে, তবে যত কম সম্ভব ব্যবহার করবে এবং তা পাঠ্যবইয়ের তথ্যের সঙ্গে সাংঘর্ষিক হওয়া যাবে না।
             - প্রশ্নের উত্তর পাঠ্যবই বা retrieved context-এ না থাকলে প্রথমে হুবহু লিখবে: “এই প্রশ্নটি পাঠ্যবইয়ে উল্লেখ নেই।” এরপর নিজের জ্ঞান থেকে একটি সংক্ষিপ্ত, সতর্কতামূলক উত্তর দেবে।
@@ -95,9 +99,33 @@ def format_context(chunks: list[dict[str, Any]]) -> str:
     return "\n\n".join(blocks)
 
 
-def stream_answer(query: str, chunks: list[dict[str, Any]]) -> Iterator[str]:
+def format_history(messages: Iterable[Mapping[str, Any]]) -> str:
+    """Render the prior thread turns for the answer prompt.
+
+    The current user question is deliberately excluded by the caller, so it is
+    shown only once in the prompt's dedicated ``query`` field.
+    """
+    turns: list[str] = []
+    for message in messages:
+        role = "শিক্ষার্থী" if message.get("role") == "user" else "সহকারী"
+        content = str(message.get("content", "")).strip()
+        if content:
+            turns.append(f"{role}: {content}")
+    return "\n\n".join(turns) or "(আগের কোনো কথোপকথন নেই)"
+
+
+def stream_answer(
+    query: str,
+    chunks: list[dict[str, Any]],
+    *,
+    history: Iterable[Mapping[str, Any]] = (),
+) -> Iterator[str]:
     chain = build_chain()
-    payload = {"query": query, "content": format_context(chunks)}
+    payload = {
+        "query": query,
+        "content": format_context(chunks) or "(নতুন কোনো পাঠ্যবইয়ের অংশ নেওয়া হয়নি)",
+        "history": format_history(history),
+    }
     for piece in chain.stream(payload):
         if piece:
             yield piece
